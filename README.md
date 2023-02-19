@@ -1,4 +1,4 @@
-# Investment tracker
+# Word Genders
 
 ## Installation
 
@@ -34,12 +34,12 @@ pip install -r requirements.txt
 ```
 python nouns-genders.py
 ```
-![Screenshot](/img/noun_german.png)
+![Screenshot](/img/nouns_german.png)
 
 ## Noun genders in Russian
 ```
 python nouns-genders.py -l ru -s configuration/sys_dict_ru.cfg -d data/data_nouns_ru_sp.csv
 ```
-![Screenshot](/img/noun_russian.png)
+![Screenshot](/img/nouns_russian.png)
 
 
