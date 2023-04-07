@@ -15,7 +15,8 @@ from tkinter import (
 )
 from PIL import Image, ImageTk
 from gtts import gTTS
-import os
+from io import BytesIO
+from pygame import mixer
 import matplotlib.pyplot as plt
 import json
 
@@ -389,8 +390,12 @@ class Window(Frame):
             f"[{SYS_DIC['missing_gender']['without_plural']}]", ""
         )
         speech = gTTS(self.text_to_speak, lang=TARGET_LANGUAGE, slow=False)
-        speech.save("temp/text.mp3")
-        os.system("mplayer temp/text.mp3")
+        mp3_fp = BytesIO()
+        speech.write_to_fp(mp3_fp)
+        mixer.init()
+        mp3_fp.seek(0)
+        mixer.music.load(mp3_fp, "mp3")
+        mixer.music.play()
 
     def clickNextButton(self):
         self.set_new_active_word_and_case()
