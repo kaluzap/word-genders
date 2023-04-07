@@ -17,7 +17,6 @@ from PIL import Image, ImageTk
 from gtts import gTTS
 from io import BytesIO
 from pygame import mixer
-import os
 import matplotlib.pyplot as plt
 import json
 
