@@ -10,7 +10,7 @@
 "Abend","Abende","m","tarde, noche, velada",1
 "Abendessen","Abendessen","n","cena",1
 "Abhilfe","-","f","remedio, auxilio",1
-"Abschied","Abschiede","m","despedida",2
+"Abschied","Abschiede","m","despedida",1
 "Abschiedsfeier","Abschiedsfeiern","f","fiesta de despedida",1
 "Abschiedsfest","Abschiedsfeste","n","fiesta de despedida",2
 "Abschreiben","-","n","transcripción, copia",15
@@ -33,7 +33,7 @@
 "Alkohol","Alkohole","m","alcohol",1
 "Allee","Alleen","f","avenida",1
 "Allergie","Allergien","f","alergia",1
-"Allianz","Allianzen","f","alianza",93
+"Allianz","Allianzen","f","alianza",92
 "Alter","-","n","edad",1
 "Ameise","Ameisen","f","hormiga",1
 "Ampel","Ampeln","f","semáforo",1
@@ -76,7 +76,7 @@
 "Aufenthalt","Aufenthalte","m","residencia",1
 "Aufenthaltstitel","Aufenthaltstitel","m","título de residencia",1
 "Aufgabe","Aufgaben","f","tarea",1
-"Aufgang","Aufgänge","m","subida, salida",2
+"Aufgang","Aufgänge","m","subida, salida",1
 "Aufzug","Aufzüge","m","ascensor, elevador",1
 "Auge","Augen","n","ojo",1
 "August","Auguste","m","agosto",1
@@ -203,7 +203,7 @@
 "Chef","Chefs","m","Jefe",1
 "Chefin","Chefinnen","f","Jefa",1
 "Chemikalie","Chemikalien","f","sustancia química",1
-"Cleverness","-","f","agudeza, listeza, sutileza",13
+"Cleverness","-","f","agudeza, listeza, sutileza",12
 "Club","Clubs","m","club",1
 "Computer","Computer","m","computadora",1
 "Cousin","Cousins","m","primo",1
@@ -316,7 +316,7 @@
 "Fehler","Fehler","m","error",1
 "Fell","Felle","n","piel",1
 "Femininum","Feminina","n","género femenino",1
-"Fenster","Fenster","n","ventana",3
+"Fenster","Fenster","n","ventana",5
 "Fernreise","Fernreisen","f","viaje de larga distancia",1
 "Fernseher","Fernseher","m","televisor",1
 "Fest","Feste","n","fiesta, festival",1
@@ -336,7 +336,7 @@
 "Fleisch","-","n","carne",2
 "Fliege","Fliegen","f","mosca",1
 "Flinte","Flinten","f","escopeta",1
-"Flotte","Flotten","f","flota",91
+"Flotte","Flotten","f","flota",90
 "Flug","Flüge","m","vuelo",3
 "Flugleistung","Flugleistungen","f","rendimiento de vuelo",1
 "Flugzeug","Flugzeuge","n","avión",1
@@ -837,7 +837,7 @@
 "Sammelbegriff","Sammelbegriffe","m","concepto genérico",2
 "Sammlung","Sammlungen","f","recaudación, colección",1
 "Samstag","Samstage","m","sabado",1
-"Sand","-","m","arena",1
+"Sand","-","m","arena",2
 "Satellit","Satelliten","m","satélite",1
 "Satz","Sätze","m","oración",1
 "Scanner","Scanner","m","escáner",1
@@ -928,7 +928,7 @@
 "Spiegel","Spiegel","m","espejo",1
 "Spiel","Spiele","n","juego",1
 "Spieler","Spieler","m","jugador",95
-"Spielerin","Spielerinnen","f","jugadora",96
+"Spielerin","Spielerinnen","f","jugadora",95
 "Spinne","Spinnen","f","araña",1
 "Sport","-","m","deporte",3
 "Sprache","Sprachen","f","idioma",1
@@ -1065,16 +1065,16 @@
 "Verlust","Verluste","m","pérdida, daño",1
 "Vermögen","Vermögen","n","bienes, fortuna, patrimonio, capital, capacidad",4
 "Versicherung","Versicherungen","f","seguro",1
-"Versorgung","-","f","sustento, abastecimiento",91
+"Versorgung","-","f","sustento, abastecimiento",90
 "Versprechen","Versprechen","n","promesa",1
 "Verstärkung","Verstärkungen","f","refuerzo",1
-"Verteidigung","Verteidigungen","f","defensa",90
+"Verteidigung","Verteidigungen","f","defensa",89
 "Vertrag","Verträge","m","contrato",1
 "Verwaltung","Verwaltungen","f","administración",1
 "Verwandte","Verwandten","mf","pariente",1
 "Virus","Viren","n","virus",1
 "Visum","Visa/Visen","n","visa",1
-"Vogel","Vögel","m","pájaro",4
+"Vogel","Vögel","m","pájaro",3
 "Vokabular","Vokabulare","n","vocabulario",10
 "Vokal","Vokale","m","vocal",7
 "Volk","Völker","n","pueblo",1
@@ -1150,7 +1150,7 @@
 "Wunsch","Wünsche","m","deseo",1
 "Wurm","Würmer","m","gusano",1
 "Wurst","Würste","f","embutido, salchicha",1
-"Wut","-","f","rabia, ira, furor",10
+"Wut","-","f","rabia, ira, furor",11
 "Währung","Währungen","f","moneda de un país, divisa",1
 "Wärme","-","f","calor",1
 "Wörterbuch","Wörterbücher","n","diccionario",1

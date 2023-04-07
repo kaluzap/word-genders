@@ -82,13 +82,6 @@ class Window(Frame):
         )
         self.label_points.pack(side=TOP, padx="5", pady="5")
         
-        """
-        if last_success_streak is None:
-            load = Image.open("temp/success_streak.png")
-        else:
-            load = last_success_streak
-        """
-        #load = last_success_streak
         render = ImageTk.PhotoImage(last_success_streak)
         self.img = Label(master=self.frame_texts, image=render)
         self.img.image = render
@@ -258,8 +251,6 @@ class Window(Frame):
         ]
         self.label_points["text"] = SYS_DIC["label_properties"]["label_points"]["text"]
         
-        #img2 = ImageTk.PhotoImage(Image.open("temp/success_streak.png"))
-        #if last_success_streak is not None:
         img2 = ImageTk.PhotoImage(last_success_streak)
         self.img.configure(image=img2)
         self.img.image = img2
@@ -363,13 +354,10 @@ class Window(Frame):
             bins=self.success_streak_record + 1,
             range=(-0.5, self.success_streak_record + 0.5),
         )
-        #plt.savefig("temp/success_streak.png", bbox_inches="tight")
-        
         buf = BytesIO()
         plt.savefig(buf)
         buf.seek(0)
         last_success_streak = Image.open(buf)
-        
         plt.clf()
         plt.close("all")
 
