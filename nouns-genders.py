@@ -26,6 +26,7 @@ df_dictionary = pd.DataFrame()
 data_file_name = ""
 SYS_DIC = dict()
 
+last_success_streak = None
 
 class Window(Frame):
     def __init__(self, master=None):
@@ -80,9 +81,8 @@ class Window(Frame):
             master=self.frame_texts, **SYS_DIC["label_properties"]["label_points"]
         )
         self.label_points.pack(side=TOP, padx="5", pady="5")
-
-        load = Image.open("temp/success_streak.png")
-        render = ImageTk.PhotoImage(load)
+        
+        render = ImageTk.PhotoImage(last_success_streak)
         self.img = Label(master=self.frame_texts, image=render)
         self.img.image = render
         self.img.pack(side=TOP, padx="5", pady="5")
@@ -250,7 +250,8 @@ class Window(Frame):
             "fg"
         ]
         self.label_points["text"] = SYS_DIC["label_properties"]["label_points"]["text"]
-        img2 = ImageTk.PhotoImage(Image.open("temp/success_streak.png"))
+        
+        img2 = ImageTk.PhotoImage(last_success_streak)
         self.img.configure(image=img2)
         self.img.image = img2
 
@@ -337,6 +338,7 @@ class Window(Frame):
         self.update_labels()
 
     def create_figure(self):
+        global last_success_streak
         plt.rcParams["figure.figsize"] = (4.5, 1.5)
         plt.ylabel(f"{SYS_DIC['figure']['ylabel']}", fontsize=8)
         plt.xlabel(f"{SYS_DIC['figure']['xlabel']}", fontsize=8)
@@ -352,7 +354,10 @@ class Window(Frame):
             bins=self.success_streak_record + 1,
             range=(-0.5, self.success_streak_record + 0.5),
         )
-        plt.savefig("temp/success_streak.png", bbox_inches="tight")
+        buf = BytesIO()
+        plt.savefig(buf)
+        buf.seek(0)
+        last_success_streak = Image.open(buf)
         plt.clf()
         plt.close("all")
 
