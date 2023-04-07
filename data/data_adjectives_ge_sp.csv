@@ -6,7 +6,7 @@
 "anstrengend","anstrengender","am anstrengendsten","cansador, agotador, duro",1
 "anwesend","-","-","presente, asistente",2
 "arm","ärmer","am ärmsten","pobre",1
-"artig","artiger","am artigsten","bueno, obediente",17
+"artig","artiger","am artigsten","bueno, obediente",20
 "behindert","behinderter","am behindertsten","minusválido, discapacitado, impedido",1
 "beliebt","beliebter","am beliebtesten","estimado, apreciado",1
 "berühmt","berühmter","am berühmtesten","famoso, célebre",1
@@ -28,7 +28,7 @@
 "einsam","einsamer","am einsamsten","solo, abandonado, aislado",1
 "einzig","-","-","único, solo",1
 "einzigartig","-","-","único, sin par",1
-"erforderlich","erforderlicher","am erforderlichsten","necesario",6
+"erforderlich","erforderlicher","am erforderlichsten","necesario",7
 "erschöpft","erschöpfter","am erschöpftesten","cansado, agotado, fatigado",1
 "exakt","exakter","am exaktesten","preciso, exacto",1
 "fantastisch","fantastischer","am fantastischsten","fantástico",1
@@ -40,10 +40,10 @@
 "fröhlich","fröhlicher","am fröhlichsten","alegre",1
 "früh","früher","am frühesten","temprano",1
 "frühzeitig","-","-","temprano",1
-"furchtbar","furchtbarer","am furchtbarsten","terrible, horrible",4
+"furchtbar","furchtbarer","am furchtbarsten","terrible, horrible",3
 "ganz","-","-","todo, entero",1
 "gefährlich","gefährlicher","am gefährlichsten","peligroso",1
-"gegenwärtig","gegenwärtiger","am gegenwärtigsten","actual, presente",1
+"gegenwärtig","gegenwärtiger","am gegenwärtigsten","actual, presente",3
 "gerade","gerader","am geradesten","derecho, recto",1
 "gerecht","gerechter","am gerechtesten","justo, merecido",1
 "gesamt","-","-","todo, total",1
@@ -54,7 +54,7 @@
 "glücklich","glücklicher","am glücklichsten","feliz, afortunado",1
 "grausam","grausamer","am grausamsten","cruel, brutal",1
 "groß","größer","am größten","grande",1
-"großartig","großartiger","am großartigsten","grandioso, magnífico, excelente",11
+"großartig","großartiger","am großartigsten","grandioso, magnífico, excelente",8
 "gut","besser","am besten","bueno",1
 "heimisch","heimischer","am heimischsten","familiarizado, nacional",1
 "heiter","heiterer/heitrer","am heitersten","alegre, divertido",1

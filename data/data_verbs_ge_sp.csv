@@ -122,7 +122,7 @@
 "beraten über","hat beraten","deliberar sobre, discutir",1
 "sich beraten mit","hat beraten","asesorarse con, consultarse con",1
 "bergen","hat geborgen","rescatar, recuperar, albergar",10
-"bergen vor","hat geborgen","proteger de",10
+"bergen vor","hat geborgen","proteger de",9
 "beruhigen","hat beruhigt","tranquilizar, calmar",1
 "sich beruhigen","hat beruhigt","tranquilizarse, calmarse",1
 "berücksichtigen","hat berücksichtigt","tener en cuenta",1
@@ -248,7 +248,7 @@
 "machen","hat gemacht","hacer",1
 "mahlen","hat gemahlen","moler",10
 "meiden","hat gemieden","evitar",12
-"melken","hat gemolken","ordeñar",13
+"melken","hat gemolken","ordeñar",14
 "messen","hat gemessen","medir",7
 "multiplizieren mit","-","multiplicar por",1
 "mögen","hat gemocht","gustar",10
@@ -258,7 +258,7 @@
 "nehmen","hat genommen","coger, tomar, apoderarse",9
 "nennen","hat genannt","nombrar",7
 "pfeifen","hat gepfiffen","silbar",10
-"preisen","hat gepriesen","alabar",11
+"preisen","hat gepriesen","alabar",10
 "protestieren gegen","-","protestar contra",1
 "protzen mit","-","hacer gala de",1
 "quellen","ist gequollen","manar, fluir, surgir, proceder",10
@@ -273,7 +273,7 @@
 "rennen","ist gerannt","correr",9
 "riechen","hat gerochen","oler",12
 "ringen","hat gerungen","luchar",12
-"rufen","hat gerufen","llamar",9
+"rufen","hat gerufen","llamar",8
 "saufen","hat gesoffen","beber (animales)",9
 "saugen","hat gesogen","mamar, absorber",7
 "schaffen","hat geschaffen","crear, trabajar",9
@@ -309,14 +309,14 @@
 "sorgen für","-","ocuparse de",1
 "speien","hat gespien","escupir",9
 "spielen","gespielt","jugar",1
-"spinnen","hat gesponnen","hilar",8
+"spinnen","hat gesponnen","hilar",7
 "sprechen mit","-","hablar con",1
 "sprechen","hat gesprochen","hablar",7
 "sprießen","ist gesprossen","brotar",10
 "springen","ist gesprungen","saltar",7
 "stechen","hat gestochen","picar, pinchar",14
 "stehen","hat gestanden","estar de pie",9
-"stehlen","hat gestohlen","robar",10
+"stehlen","hat gestohlen","robar",9
 "steigen","ist gestiegen","escalar, subir",10
 "sterben","ist gestorben","morir",9
 "stinken","hat gestunken","apestar",9
@@ -377,7 +377,7 @@
 "zurücktreten von","ist zurückgetreten","dimitir de, desistir de, renunciar a",1
 "zusammenhängen","hat zusammengehängt","estar unido, estar conectado, estar relacionado",1
 "zusammenhängen mit","hat zusammengehängt","tener relación con",1
-"zuschießen","hat zugeschossen","tirar, lanzar, contribuir con",11
+"zuschießen","hat zugeschossen","tirar, lanzar, contribuir con",10
 "zuschießen auf","hat zugeschossen","abalanzarse sobre, precipitarse",11
 "zwingen zu","hat gezwungen","obligar a",12
 "sich zwingen zu","hat gezwungen","obligarse a",11
