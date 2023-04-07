@@ -339,7 +339,7 @@ class Window(Frame):
 
     def create_figure(self):
         global last_success_streak
-        plt.rcParams["figure.figsize"] = (4.5, 1.5)
+        plt.rcParams["figure.figsize"] = (4.5, 1.75)
         plt.ylabel(f"{SYS_DIC['figure']['ylabel']}", fontsize=8)
         plt.xlabel(f"{SYS_DIC['figure']['xlabel']}", fontsize=8)
         plt.rc("xtick", labelsize=6)
@@ -353,9 +353,12 @@ class Window(Frame):
             self.success_streak_history + [self.success_streak],
             bins=self.success_streak_record + 1,
             range=(-0.5, self.success_streak_record + 0.5),
+            color="lightgrey",
         )
+        plt.grid()
+        plt.tight_layout()
         buf = BytesIO()
-        plt.savefig(buf)
+        plt.savefig(buf, facecolor="grey")
         buf.seek(0)
         last_success_streak = Image.open(buf)
         plt.clf()
