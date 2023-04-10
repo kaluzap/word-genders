@@ -25,7 +25,8 @@ df_dictionary = pd.DataFrame()
 data_file_name = ""
 SYS_DIC = dict()
 
-last_success_streak_img = None
+# my_success = util.SuccessStreak()
+#last_success_streak_img = None
 
 class Window(Frame):
     def __init__(self, master=None):
@@ -40,11 +41,12 @@ class Window(Frame):
         self.already_tested = False
         self.allow_repetitions = IntVar()
         self.allow_repetitions.set(1)
-        self.success_streak = 0
-        self.success_streak_record = 0
-        self.success_streak_history = []
+        # self.success_streak = 0
+        # self.success_streak_record = 0
+        # self.success_streak_history = []
+        self.my_success = util.SuccessStreak()
         self.create_figure()
-
+        
         # starting a word
         self.set_new_active_word_and_case()
 
@@ -81,7 +83,7 @@ class Window(Frame):
         )
         self.label_points.pack(side=TOP, padx="5", pady="5")
         
-        render = ImageTk.PhotoImage(last_success_streak_img)
+        render = ImageTk.PhotoImage(self.my_success.last_success_streak_img)
         self.img = Label(master=self.frame_texts, image=render)
         self.img.image = render
         self.img.pack(side=TOP, padx="5", pady="5")
@@ -232,7 +234,7 @@ class Window(Frame):
             line += "    :)\n"
         else:
             line += "    :(\n"
-        line += f"{SYS_DIC['statistics']['success_streak']}: {self.success_streak} ({self.success_streak_record})"
+        line += f"{SYS_DIC['statistics']['success_streak']}: {self.my_success.success_streak} ({self.my_success.success_streak_record})"
         return line
 
     def update_labels(self):
@@ -250,7 +252,7 @@ class Window(Frame):
         ]
         self.label_points["text"] = SYS_DIC["label_properties"]["label_points"]["text"]
         
-        img2 = ImageTk.PhotoImage(last_success_streak_img)
+        img2 = ImageTk.PhotoImage(self.my_success.last_success_streak_img)
         self.img.configure(image=img2)
         self.img.image = img2
 
@@ -297,7 +299,8 @@ class Window(Frame):
         if self.test_word(gender):
             if not self.already_tested:
                 self.count_good += 1
-                self.success_streak += 1
+                #self.success_streak += 1
+                self.my_success.add_new_sucess()
                 df_dictionary.at[self.active_word["index"], "mistakes"] -= 1
                 if df_dictionary.at[self.active_word["index"], "mistakes"] < 1:
                     df_dictionary.at[self.active_word["index"], "mistakes"] = 1
@@ -309,8 +312,9 @@ class Window(Frame):
             SYS_DIC["label_properties"]["label_status"]["text"] = SYS_DIC[
                 "message_status"
             ]["correct"]
-            if self.success_streak_record < self.success_streak:
-                self.success_streak_record = self.success_streak
+            #if self.success_streak_record < self.success_streak:
+                #self.success_streak_record = self.success_streak
+            if self.my_success.is_record:
                 SYS_DIC["label_properties"]["label_status"]["text"] = (
                     SYS_DIC["message_status"]["correct"]
                     + f"   {SYS_DIC['message_status']['record']}"
@@ -324,19 +328,27 @@ class Window(Frame):
             SYS_DIC["label_properties"]["label_full_data"]["fg"] = SYS_DIC[
                 "gender_color"
             ][gender]
+            
         else:
             SYS_DIC["label_properties"]["label_status"]["text"] = SYS_DIC[
                 "message_status"
             ]["wrong"]
-            self.success_streak_history.append(self.success_streak)
-            self.success_streak = 0
+            #self.success_streak_history.append(self.success_streak)
+            #self.success_streak = 0
+            self.my_success.stop_success_streak()
             df_dictionary.at[self.active_word["index"], "mistakes"] += 1
+        
         self.create_figure()
         SYS_DIC["label_properties"]["label_points"]["text"] = self.count_statistics()
         self.already_tested = True
         self.update_labels()
 
     def create_figure(self):
+        self.my_success.make_success_streak_figure(
+            xlabel = SYS_DIC['figure']['xlabel'],
+            ylabel = SYS_DIC['figure']['ylabel'],
+        )
+        """
         global last_success_streak_img
         last_success_streak_img = util.make_success_streak_figure(
             success_streak_history=self.success_streak_history,
@@ -345,6 +357,7 @@ class Window(Frame):
             xlabel = SYS_DIC['figure']['xlabel'],
             ylabel = SYS_DIC['figure']['ylabel'],
         )
+        """
         
     def test_word(self, gender):
         if ("s" in self.active_case) and (gender in self.active_word["gender"]):
