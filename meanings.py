@@ -499,7 +499,7 @@ def close_window():
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(
-        description="Words", epilog="Example: python words.py -fd data_nouns_ge_sp.csv"
+        description="Words", epilog="Example: python meanings.py -tl de -sd configuration/sys_dict_de.cfg -d data/data_nouns_ge_sp.csv"
     )
 
     parser.add_argument(
