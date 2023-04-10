@@ -15,8 +15,6 @@ from tkinter import (
     TOP,
 )
 from PIL import ImageTk
-from io import BytesIO
-import matplotlib.pyplot as plt
 import json
 
 
@@ -25,8 +23,6 @@ df_dictionary = pd.DataFrame()
 data_file_name = ""
 SYS_DIC = dict()
 
-# my_success = util.SuccessStreak()
-#last_success_streak_img = None
 
 class Window(Frame):
     def __init__(self, master=None):
@@ -41,12 +37,9 @@ class Window(Frame):
         self.already_tested = False
         self.allow_repetitions = IntVar()
         self.allow_repetitions.set(1)
-        # self.success_streak = 0
-        # self.success_streak_record = 0
-        # self.success_streak_history = []
         self.my_success = util.SuccessStreak()
         self.create_figure()
-        
+
         # starting a word
         self.set_new_active_word_and_case()
 
@@ -82,7 +75,7 @@ class Window(Frame):
             master=self.frame_texts, **SYS_DIC["label_properties"]["label_points"]
         )
         self.label_points.pack(side=TOP, padx="5", pady="5")
-        
+
         render = ImageTk.PhotoImage(self.my_success.last_success_streak_img)
         self.img = Label(master=self.frame_texts, image=render)
         self.img.image = render
@@ -251,7 +244,7 @@ class Window(Frame):
             "fg"
         ]
         self.label_points["text"] = SYS_DIC["label_properties"]["label_points"]["text"]
-        
+
         img2 = ImageTk.PhotoImage(self.my_success.last_success_streak_img)
         self.img.configure(image=img2)
         self.img.image = img2
@@ -297,10 +290,9 @@ class Window(Frame):
     def run_button_gender(self, gender):
         self.count_total_clicks += 1
         if self.test_word(gender):
+            self.my_success.add_new_sucess()
             if not self.already_tested:
                 self.count_good += 1
-                #self.success_streak += 1
-                self.my_success.add_new_sucess()
                 df_dictionary.at[self.active_word["index"], "mistakes"] -= 1
                 if df_dictionary.at[self.active_word["index"], "mistakes"] < 1:
                     df_dictionary.at[self.active_word["index"], "mistakes"] = 1
@@ -312,8 +304,6 @@ class Window(Frame):
             SYS_DIC["label_properties"]["label_status"]["text"] = SYS_DIC[
                 "message_status"
             ]["correct"]
-            #if self.success_streak_record < self.success_streak:
-                #self.success_streak_record = self.success_streak
             if self.my_success.is_record:
                 SYS_DIC["label_properties"]["label_status"]["text"] = (
                     SYS_DIC["message_status"]["correct"]
@@ -328,16 +318,14 @@ class Window(Frame):
             SYS_DIC["label_properties"]["label_full_data"]["fg"] = SYS_DIC[
                 "gender_color"
             ][gender]
-            
+
         else:
             SYS_DIC["label_properties"]["label_status"]["text"] = SYS_DIC[
                 "message_status"
             ]["wrong"]
-            #self.success_streak_history.append(self.success_streak)
-            #self.success_streak = 0
             self.my_success.stop_success_streak()
             df_dictionary.at[self.active_word["index"], "mistakes"] += 1
-        
+
         self.create_figure()
         SYS_DIC["label_properties"]["label_points"]["text"] = self.count_statistics()
         self.already_tested = True
@@ -345,20 +333,9 @@ class Window(Frame):
 
     def create_figure(self):
         self.my_success.make_success_streak_figure(
-            xlabel = SYS_DIC['figure']['xlabel'],
-            ylabel = SYS_DIC['figure']['ylabel'],
+            xlabel=SYS_DIC["figure"]["xlabel"], ylabel=SYS_DIC["figure"]["ylabel"]
         )
-        """
-        global last_success_streak_img
-        last_success_streak_img = util.make_success_streak_figure(
-            success_streak_history=self.success_streak_history,
-            success_streak=self.success_streak,
-            success_streak_record=self.success_streak_record,
-            xlabel = SYS_DIC['figure']['xlabel'],
-            ylabel = SYS_DIC['figure']['ylabel'],
-        )
-        """
-        
+
     def test_word(self, gender):
         if ("s" in self.active_case) and (gender in self.active_word["gender"]):
             return True
@@ -393,7 +370,7 @@ class Window(Frame):
             f"[{SYS_DIC['missing_gender']['without_plural']}]", ""
         )
         util.play_string(text=self.text_to_speak, language=TARGET_LANGUAGE)
-        
+
     def clickNextButton(self):
         self.set_new_active_word_and_case()
         SYS_DIC["label_properties"]["label_word"]["fg"] = "black"
