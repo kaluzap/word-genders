@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 from PIL import Image
 import time
 
-        
+
 class SuccessStreak:
     def __init__(self):
         # list of succes streaks
@@ -46,12 +46,23 @@ class SuccessStreak:
         else:
             plt.yticks(range(0, 1))
 
+        # show the actual success streak only if it is not zero
+        data_to_show = self.success_streak_history.copy()
+        if self.success_streak > 0:
+            data_to_show += [self.success_streak]
         plt.hist(
-            self.success_streak_history + [self.success_streak],
+            data_to_show,
             bins=self.success_streak_record + 1,
             range=(-0.5, self.success_streak_record + 0.5),
             color=(0.59, 0.59, 0.59),
         )
+        if self.success_streak > 0:
+            plt.hist(
+                self.success_streak,
+                bins=self.success_streak_record + 1,
+                range=(-0.5, self.success_streak_record + 0.5),
+                color=(0.90, 0.59, 0.59),
+            )
         plt.grid()
         plt.tight_layout()
         buf = BytesIO()
