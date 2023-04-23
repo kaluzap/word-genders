@@ -1,5 +1,9 @@
 # Multi-frame tkinter application v2.3
+# https://stackoverflow.com/questions/7546050/switch-between-two-frames-in-tkinter
 import tkinter as tk
+from tkinter import ttk
+from tkinter import filedialog as fd
+from tkinter.messagebox import showinfo
 
 class SampleApp(tk.Tk):
     def __init__(self):
@@ -15,6 +19,10 @@ class SampleApp(tk.Tk):
         self._frame = new_frame
         self._frame.pack()
 
+
+
+    
+
 class StartPage(tk.Frame):
     def __init__(self, master):
         tk.Frame.__init__(self, master)
@@ -23,6 +31,24 @@ class StartPage(tk.Frame):
                   command=lambda: master.switch_frame(PageOne)).pack()
         tk.Button(self, text="Open page two",
                   command=lambda: master.switch_frame(PageTwo)).pack()
+        ttk.Button(self, text='Open a File',command=self.select_file).pack(expand=True)
+        
+    def select_file(self):
+        filetypes = (
+            ('text files', '*.txt'),
+            ('All files', '*.*')
+        )
+
+        filename = fd.askopenfilename(
+            title='Open a file',
+            initialdir='/',
+            filetypes=filetypes)
+
+        showinfo(
+            title='Selected File',
+            message=filename
+        )
+    
 
 class PageOne(tk.Frame):
     def __init__(self, master):
@@ -30,6 +56,7 @@ class PageOne(tk.Frame):
         tk.Label(self, text="This is page one").pack(side="top", fill="x", pady=10)
         tk.Button(self, text="Return to start page",
                   command=lambda: master.switch_frame(StartPage)).pack()
+        
 
 class PageTwo(tk.Frame):
     def __init__(self, master):
