@@ -57,6 +57,9 @@ class Window(Frame):
         # Windows
         Frame.__init__(self, master)
         self.master = master
+        
+        master.wm_title("Noun genders")
+        master.geometry("550x550")
 
         # subframe for texts
         self.frame_texts = Frame(self)

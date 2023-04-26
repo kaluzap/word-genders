@@ -87,8 +87,10 @@ class ControlFrame(tk.Frame):
             variable=self.selected_language,
             command=self.update_label_language).pack(side=tk.TOP, padx="5", pady="5")
         """
+        container.wm_title("WORDS!")
+        container.geometry("300x500")
         
-        tk.Label(self, text="WORDS!").pack(side="top", fill="x", pady=10)
+        tk.Label(self, text="Configuration").pack(side="top", fill="x", pady=10)
         
         tk.Label(self, text="Choose language").pack(side="top", fill="x", pady=10)
         self.selected_language = tk.StringVar()

@@ -5,8 +5,8 @@ from util.control_frame import ControlFrame
 class App(tk.Tk):
     def __init__(self):
         super().__init__()
-        self.wm_title("WORDS!")
-        self.geometry("550x500")
+        #self.wm_title("WORDS!")
+        #self.geometry("550x500")
         self.protocol("WM_DELETE_WINDOW", self.close_window)
         self.resizable(False, False)
         self._frame = None
