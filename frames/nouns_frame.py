@@ -1,193 +1,61 @@
-"""
-Control Frame
-
-This Frame sets the following parameters:
-1. the system langauge
-2. the training languaje
-3. the dictionary
-
-In addiotion it loads the tools:
-1. nouns
-2. meanings
-3. load dictionary
-4. add or remove words to/from the dictionary
-"""
-
-import tkinter as tk
-from tkinter import ttk
-from tkinter import filedialog as fd
-from tkinter.messagebox import showerror
-from tkinter.messagebox import showinfo
-
-
-
-
-
-
-#from util.nouns import ConverterFrame, TemperatureConverter
-from util.nouns_genders import Window
-
-"""
-class PageOne(tk.Frame):
-    def __init__(self, master):
-        tk.Frame.__init__(self, master)
-        tk.Label(self, text="This is page one").pack(side="top", fill="x", pady=10)
-        tk.Button(self, text="Return to start page",
-                  command=lambda: master.switch_frame(ControlFrame)).pack()
-"""
-
-class PageTwo(tk.Frame):
-    def __init__(self, master):
-        tk.Frame.__init__(self, master)
-        tk.Label(self, text="This is page two").pack(side="top", fill="x", pady=10)
-        tk.Button(self, text="Return to start page",
-                  command=lambda: master.switch_frame(ControlFrame)).pack()
-
-class ControlFrame(tk.Frame):
-    def __init__(self, container):
-
-        super().__init__(container)
-        self.container = container
-        
-
-        # initialize frames
-        """
-        self.frames = {}
-        self.frames["nouns"] = ConverterFrame(
-            container,
-            'Fahrenheit',
-            TemperatureConverter.fahrenheit_to_celsius)
-        self.frames["meanings"] = Nouns(self.container)
-        """
-
-
-        # subframe for language
-        """
-        self.frame_language = tk.Frame(self.container)
-        self.frame_language.pack(side="top", padx="5", pady="5")
-
-        self.selected_language = tk.StringVar()
-        self.selected_language.set("ge")
-
-        self.label_language = tk.Label(master=self.frame_language, text=f"Languages ({self.selected_language.get()})")
-        self.label_language.pack(side=tk.TOP, padx="5", pady="5")
-        
-        # radio buttons
-        tk.Radiobutton(
-            self.container,
-            text='German',
-            value="ge",
-            variable=self.selected_language,
-            command=self.update_label_language).pack(side=tk.TOP, padx="5", pady="5")
-
-        tk.Radiobutton(
-            self.container,
-            text='Russian',
-            value="ru",
-            variable=self.selected_language,
-            command=self.update_label_language).pack(side=tk.TOP, padx="5", pady="5")
-        """
-        container.wm_title("WORDS!")
-        container.geometry("300x500")
-        
-        tk.Label(self, text="Configuration").pack(side="top", fill="x", pady=10)
-        
-        tk.Label(self, text="Choose language").pack(side="top", fill="x", pady=10)
-        self.selected_language = tk.StringVar()
-        self.selected_language.set("ge")
-        tk.Radiobutton(
-            self,
-            text='German',
-            value="ge",
-            variable=self.selected_language,
-        ).pack()
-        tk.Radiobutton(
-            self,
-            text='Russian',
-            value="ru",
-            variable=self.selected_language,
-        ).pack()
-        
-        
-        
-        tk.Label(self, text="Load dictionary").pack(side="top", fill="x", pady=10)
-        ttk.Button(self, text='Open a File',command=self.select_file).pack(expand=True)
-        
-        
-        tk.Label(self, text="Tools").pack(side="top", fill="x", pady=10)
-        
-        tk.Button(self, text="Nouns genders",
-                  command=lambda: container.switch_frame(Window)).pack()
-        tk.Button(self, text="meanings",
-                  command=lambda: container.switch_frame(PageTwo)).pack()
-        
-        
-        
-        
-        
-        
-        """
-        self.mButton = tk.Button(
-            master=self.frame_language,
-            command=self.change_frame,
-            text="Nouns",
-        )
-        self.mButton.pack(side=tk.BOTTOM, padx="5", pady="5")
-        """
-    """
-    def update_label_language(self):
-        text=f"Languages ({self.selected_language.get()})"
-        self.label_language.config(text = text)
-    """
-    def select_file(self):
-        filetypes = (
-            ('text files', '*.txt'),
-            ('All files', '*.*')
-        )
-
-        filename = fd.askopenfilename(
-            title='Open a file',
-            initialdir='/',
-            filetypes=filetypes)
-
-        showinfo(
-            title='Selected File',
-            message=filename
-        )
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+import argparse
+import pandas as pd
+from numpy import random
+from util import util
+from tkinter import (
+    Tk,
+    NORMAL,
+    DISABLED,
+    LEFT,
+    Frame,
+    IntVar,
+    Label,
+    Button,
+    Checkbutton,
+    TOP,
+)
+from PIL import ImageTk
+import json
 
 
 """
+TARGET_LANGUAGE = "de"  # language for dialog controls and sound
+df_dictionary = pd.DataFrame()
+data_file_name = "/home/pablo/cosas/word-genders/data/data_nouns_ge_sp.csv"
+SYS_DIC = dict()
+"""
+TARGET_LANGUAGE = ""
+df_dictionary = pd.DataFrame()
+#data_file_name
+SYS_DIC = {}
 
 
-
-class Window(Frame):
+class NounsFrame(Frame):
     def __init__(self, master=None):
         global SYS_DIC
-        f = open("/home/pablo/cosas/word-genders/configuration/sys_dict_de.cfg")
-        SYS_DIC = json.load(f)
+        #f = open("/home/pablo/cosas/word-genders/configuration/sys_dict_ge.cfg")
+        #SYS_DIC = json.load(f)
         global df_dictionary
-        df_dictionary = pd.read_csv(data_file_name)
-        df_dictionary["active"] = True
-        if "mistakes" not in df_dictionary.columns:
-            df_dictionary["mistakes"] = 1
-        df_dictionary["p"] = 0
-        print(df_dictionary.head())
+        global TARGET_LANGUAGE
+        #df_dictionary = pd.read_csv(data_file_name)
+        #df_dictionary["active"] = True
+        #if "mistakes" not in df_dictionary.columns:
+        #    df_dictionary["mistakes"] = 1
+        #df_dictionary["p"] = 0
+        #print(df_dictionary.head())
+        
+        # Windows
+        Frame.__init__(self, master)
+        self.master = master
+        
+        SYS_DIC = self.master.configuration.sys_dict
+        TARGET_LANGUAGE  = self.master.configuration.language
+        df_dictionary = self.master.dictionary.data
+        
+        
+        master.wm_title("Noun genders")
+        master.geometry("550x550")
+        #master.eval('tk::PlaceWindow . center')
 
         # state variables
         self.active_word = ""
@@ -205,9 +73,7 @@ class Window(Frame):
         # starting a word
         self.set_new_active_word_and_case()
 
-        # Windows
-        Frame.__init__(self, master)
-        self.master = master
+        
 
         # subframe for texts
         self.frame_texts = Frame(self)
@@ -309,7 +175,7 @@ class Window(Frame):
         self.nextButton.pack(side=LEFT, padx="5")
         
         Button(self, text="Return to start page",
-                  command=lambda: master.switch_frame(master.ControlFrame)).pack()
+                  command=lambda: master.switch_frame("control")).pack()
 
     def set_new_active_word_and_case(self):
         global df_dictionary
@@ -544,10 +410,85 @@ class Window(Frame):
         self.disable_next_button()
         self.already_tested = False
 
+
 def random_case() -> str:
     x = random.rand()
     if x < 0.75:
         return "s"
     return "p"
-    
+
+"""
+def main():
+
+    # load dictionary
+    global df_dictionary
+    try:
+        df_dictionary = pd.read_csv(data_file_name)
+    except FileNotFoundError:
+        print(f'I cannot open the file "{data_file_name}"')
+        return
+    df_dictionary["active"] = True
+    if "mistakes" not in df_dictionary.columns:
+        df_dictionary["mistakes"] = 1
+    df_dictionary["p"] = 0
+    print(df_dictionary.head())
+
+    # initialize tkinter
+    root = Tk()
+    Window(root)
+    root.wm_title("WORDS!")
+    root.geometry("550x500")
+    root.protocol("WM_DELETE_WINDOW", close_window)
+    root.mainloop()
+
+
+def close_window():
+    global df_dictionary
+    df_dictionary.drop(columns=["active", "p"], inplace=True)
+    df_dictionary.to_csv(data_file_name, index=False, quoting=2)
+    print("Ciao")
+    quit()
+
+
+if __name__ == "__main__":
+
+    parser = argparse.ArgumentParser(
+        description="Words", epilog="Example: python words.py -fd data_nouns_ge_sp.csv"
+    )
+
+    parser.add_argument(
+        "--target_language",
+        "-l",
+        required=False,
+        type=str,
+        default="de",
+        help=f"Target language for the dialog controls and sound (default 'de')",
+    )
+
+    parser.add_argument(
+        "--system_dictionary",
+        "-s",
+        required=False,
+        type=str,
+        default="configuration/sys_dict_de.cfg",
+        help=f"System configuration",
+    )
+
+    parser.add_argument(
+        "--dictionary",
+        "-d",
+        required=False,
+        type=str,
+        default="data/data_nouns_ge_sp.csv",
+        help=f"File with the dictionary",
+    )
+
+    args = parser.parse_args()
+    data_file_name = args.dictionary
+    TARGET_LANGUAGE = args.target_language
+
+    f = open(args.system_dictionary)
+    SYS_DIC = json.load(f)
+
+    main()
 """
