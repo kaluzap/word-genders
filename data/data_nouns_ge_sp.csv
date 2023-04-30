@@ -111,7 +111,7 @@
 "Bar","Bars","f","bar",2
 "Bargeld","-","n","dinero en efectivo",1
 "Batterie","Batterien","f","batería, pila",1
-"Bau","-","m","construcción",2
+"Bau","-","m","construcción",1
 "Baum","Bäume","m","árbol",1
 "Bedarf","-","m","necesidad, falta",1
 "Bedeutung","Bedeutungen","f","significado",1
@@ -216,7 +216,7 @@
 "Decke","Decken","f","techo interno, manta",1
 "Deklination","Deklinationen","f","declinación",1
 "Demokratie","Demokratien","f","democracia",1
-"Demonstration","Demonstrationen","f","demostración, manifestación",4
+"Demonstration","Demonstrationen","f","demostración, manifestación",5
 "Design","Designs","n","diseño",2
 "Detail","Details","n","detalle",1
 "Deutsch","-","n","idioma alemán",1
@@ -336,7 +336,7 @@
 "Fleisch","-","n","carne",1
 "Fliege","Fliegen","f","mosca",1
 "Flinte","Flinten","f","escopeta",1
-"Flotte","Flotten","f","flota",73
+"Flotte","Flotten","f","flota",72
 "Flug","Flüge","m","vuelo",3
 "Flugleistung","Flugleistungen","f","rendimiento de vuelo",1
 "Flugzeug","Flugzeuge","n","avión",1
@@ -370,7 +370,7 @@
 "Füller","Füller","m","pluma, lapicera",1
 "Gabel","Gabeln","f","tenedor",1
 "Galaxie","Galaxien","f","galaxia",1
-"Galaxie","Galaxien","f","galaxia",81
+"Galaxie","Galaxien","f","galaxia",80
 "Gardine","Gardinen","f","cortina",1
 "Garten","Gärten","m","jardín",1
 "Gast","Gäste","m","huesped",1
@@ -430,7 +430,7 @@
 "Großvater","Großväter","m","abuelo",1
 "Grund","Gründe","m","suelo, base, fundamento",1
 "Grundschule","Grundschulen","f","escuela primaria",1
-"Grundwissen","-","n","conocimientos básicos",9
+"Grundwissen","-","n","conocimientos básicos",10
 "Gymnasium","Gymnasien","n","escuela media, secundaria",1
 "Gürtel","Gürtel","m","cinturón",3
 "Hafen","Häfen","m","puerto",1
@@ -518,7 +518,7 @@
 "Keller","Keller","m","sótano",1
 "Kellner","Kellner","m","camarero",1
 "Kellnerin","Kellnerinnen","f","camarera",1
-"Kenntnis","-","f","conocimiento",35
+"Kenntnis","-","f","conocimiento",34
 "Kerze","Kerzen","f","vela",1
 "Kette","Ketten","f","cadena, collar, serie",1
 "Kind","Kinder","n","niño",1
@@ -583,7 +583,7 @@
 "Kugelschreiber","Kugelschreiber","m","bolígrafo",1
 "Kuh","Kühe","f","vaca",1
 "Kuhkalb","Kuhkälber","n","ternera",1
-"Kultur","Kulturen","f","cultura",1
+"Kultur","Kulturen","f","cultura",2
 "Kumpel","Kumpel","m","compañero",1
 "Kunde","Kunden","mf","cliente(m), noticia(f)",2
 "Kundenkreis","Kundenkreise","m","clientela",1
@@ -721,7 +721,7 @@
 "Nord","-","m","norte",1
 "Norden","-","m","norte",1
 "Notfall","Notfälle","m","urgencia",2
-"Notiz","Notizen","f","noticia, nota",84
+"Notiz","Notizen","f","noticia, nota",83
 "Notwendigkeit","-","f","necesidad",1
 "November","November","m","noviembre",1
 "Nudel","Nudeln","f","pasta, fideos",1
@@ -928,7 +928,7 @@
 "Spiegel","Spiegel","m","espejo",1
 "Spiel","Spiele","n","juego",2
 "Spieler","Spieler","m","jugador",74
-"Spielerin","Spielerinnen","f","jugadora",79
+"Spielerin","Spielerinnen","f","jugadora",78
 "Spinne","Spinnen","f","araña",1
 "Sport","-","m","deporte",3
 "Sprache","Sprachen","f","idioma",1
@@ -1113,7 +1113,7 @@
 "Weihnachtslied","Weihnachtslieder","n","canción de Navidad",1
 "Weihnachtsmann","Weihnachtsmänner","m","papá noel",1
 "Wein","Weine","m","vino",1
-"Weizen","Weizen","m","trigo",1
+"Weizen","Weizen","m","trigo",2
 "Weizenbier","Weizenbiere","n","cerveza de trigo",1
 "Welle","Wellen","f","ola, onda",1
 "Welt","Welten","f","mundo",1

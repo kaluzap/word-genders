@@ -1,6 +1,7 @@
 import tkinter as tk
 from frames.control_frame import ControlFrame
 from frames.nouns_frame import NounsFrame
+from frames.add_delete_frame import AddDeleteFrame
 
 # from frames.meanings_frame import MeaningsFrame
 from util.dictionary import Dictionary
@@ -10,11 +11,11 @@ class App(tk.Tk):
     def __init__(self):
         super().__init__()
         self.protocol("WM_DELETE_WINDOW", self.close_window)
-
+        
         self.dictionary = Dictionary()
         self.configuration = Configuration()
 
-        self.all_frames = {"control": ControlFrame, "nouns": NounsFrame}
+        self.all_frames = {"control": ControlFrame, "nouns": NounsFrame, "add_delete":AddDeleteFrame}
         self._frame = None
         self.switch_frame("control")
 

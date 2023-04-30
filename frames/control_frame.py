@@ -15,7 +15,7 @@ In addiotion it loads the tools:
 import tkinter as tk
 from tkinter import ttk
 from tkinter import filedialog
-from tkinter.messagebox import showinfo
+from tkinter.messagebox import showinfo, showerror
 
 from pathlib import Path
 from configuration.configuration import DATA_PATH
@@ -28,7 +28,8 @@ class ControlFrame(tk.Frame):
         self.master = master
         master.wm_title("WORDS!")
         master.geometry("300x440")
-
+        master.resizable(False, False)
+        
         tk.Label(self, text="Configuration", font="Verdana 14 bold", fg="black").pack(
             side="top", fill="x", pady=10
         )
@@ -69,20 +70,26 @@ class ControlFrame(tk.Frame):
             self,
             width=15,
             text="Nouns genders",
-            command=lambda: master.switch_frame("nouns"),
+            command=self.switch_nouns_frame,
         ).pack(expand=True)
         tk.Button(
             self,
             width=15,
             text="Meanings",
-            command=lambda: master.switch_frame("nouns"),
+            command=lambda :master.switch_frame("nouns"),
         ).pack(expand=True)
         tk.Button(
             self,
             width=15,
             text="Add or delete words",
-            command=lambda: master.switch_frame("nouns"),
+            command=lambda :master.switch_frame("add_delete"),
         ).pack(expand=True)
+
+    def switch_nouns_frame(self):
+        if self.master.dictionary.kind == "nouns":
+            self.master.switch_frame("nouns")
+        else:
+            showerror(title="Wrong dictionary", message=f"The dictionary {self.master.dictionary.name} is not for nouns.")
 
     def select_training_language(self):
         self.master.configuration.load_configuration(self.selected_language.get())
