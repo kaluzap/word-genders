@@ -81,7 +81,7 @@ class ControlFrame(tk.Frame):
         tk.Button(
             self,
             width=15,
-            text="Add or delete words",
+            text="Manage words",
             command=lambda :master.switch_frame("add_delete"),
         ).pack(expand=True)
 
