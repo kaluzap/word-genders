@@ -15,6 +15,7 @@ class AddDeleteFrame(tk.Frame):
         master.wm_title("Manage words")
         master.geometry("500x330")
         master.resizable(False, False)
+        master.protocol("WM_DELETE_WINDOW", self.return_to_main_page)
         
         # subframe for adding words
         self.frame_add = tk.Frame(self)

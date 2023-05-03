@@ -29,6 +29,7 @@ class ControlFrame(tk.Frame):
         master.wm_title("WORDS!")
         master.geometry("300x440")
         master.resizable(False, False)
+        master.protocol("WM_DELETE_WINDOW", master.close_window)
         
         tk.Label(self, text="Configuration", font="Verdana 14 bold", fg="black").pack(
             side="top", fill="x", pady=10

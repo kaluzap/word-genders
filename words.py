@@ -10,7 +10,7 @@ from configuration.configuration import Configuration
 class App(tk.Tk):
     def __init__(self):
         super().__init__()
-        self.protocol("WM_DELETE_WINDOW", self.close_window)
+        #self.protocol("WM_DELETE_WINDOW", self.close_window)
         
         self.dictionary = Dictionary()
         self.configuration = Configuration()
