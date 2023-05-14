@@ -29,7 +29,7 @@ class App(tk.Tk):
 
     def close_window(self):
         print("Ciao")
-        quit()
+        self.quit()
 
 
 def main():

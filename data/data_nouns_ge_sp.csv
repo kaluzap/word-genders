@@ -26,14 +26,14 @@
 "Ahnung","Ahnungen","f","idea",1
 "Akku","Akkus","m","acumulador, batería",8
 "Akkusativ","Akkusative","m","acusativo",1
-"Aktion","Aktionen","f","acción, promoción",97
+"Aktion","Aktionen","f","acción, promoción",99
 "Aktivität","Aktivitäten","f","actividad",1
 "Aktualität","-","f","actualidad",1
 "Albtraum","Albträume","m","pesadilla",1
 "Alkohol","Alkohole","m","alcohol",1
 "Allee","Alleen","f","avenida",1
 "Allergie","Allergien","f","alergia",1
-"Allianz","Allianzen","f","alianza",75
+"Allianz","Allianzen","f","alianza",74
 "Alter","-","n","edad",4
 "Ameise","Ameisen","f","hormiga",1
 "Ampel","Ampeln","f","semáforo",1
@@ -108,7 +108,7 @@
 "Banane","Bananen","f","banana",1
 "Bank","Bänke","f","banco",1
 "Banknote","Banknoten","f","billete de banco",1
-"Bar","Bars","f","bar",2
+"Bar","Bars","f","bar",1
 "Bargeld","-","n","dinero en efectivo",1
 "Batterie","Batterien","f","batería, pila",1
 "Bau","-","m","construcción",1
@@ -139,11 +139,11 @@
 "Beschäftigung","Beschäftigungen","f","ocupación, actividad, trabajo",1
 "Besserung","-","f","mejora, mejoría, restablecimiento",3
 "Besteck","Bestecke","n","cubiertos",1
-"Bestehen","-","n","existencia",9
+"Bestehen","-","n","existencia",8
 "Bestellung","Bestellungen","f","encargo, pedido",1
 "Besucher","Besucher","m","visitante",1
 "Betrag","Beträge","m","suma, importe, total",3
-"Betragen","-","n","comportamiento, conducta",19
+"Betragen","-","n","comportamiento, conducta",18
 "Betreff","Betreffe","m","asunto",3
 "Betreuung","-","f","asistencia, responsabilidad",1
 "Betrieb","Betriebe","m","empresa, funcionamiento",1
@@ -247,7 +247,7 @@
 "Ehemann","Ehemänner","m","esposo",1
 "Ehre","Ehren","f","honor",80
 "Ei","Eier","n","huevo",1
-"Eiche","Eichen","f","roble",9
+"Eiche","Eichen","f","roble",8
 "Eichhörnchen","Eichhörnchen","n","ardilla",1
 "Eilmeldung","Eilmeldungen","f","comunucación urgente",1
 "Eindruck","Eindrücke","m","impresión, sensación, huella",1
@@ -370,7 +370,7 @@
 "Füller","Füller","m","pluma, lapicera",1
 "Gabel","Gabeln","f","tenedor",1
 "Galaxie","Galaxien","f","galaxia",1
-"Galaxie","Galaxien","f","galaxia",80
+"Galaxie","Galaxien","f","galaxia",79
 "Gardine","Gardinen","f","cortina",1
 "Garten","Gärten","m","jardín",1
 "Gast","Gäste","m","huesped",1
@@ -430,7 +430,7 @@
 "Großvater","Großväter","m","abuelo",1
 "Grund","Gründe","m","suelo, base, fundamento",1
 "Grundschule","Grundschulen","f","escuela primaria",1
-"Grundwissen","-","n","conocimientos básicos",10
+"Grundwissen","-","n","conocimientos básicos",11
 "Gymnasium","Gymnasien","n","escuela media, secundaria",1
 "Gürtel","Gürtel","m","cinturón",3
 "Hafen","Häfen","m","puerto",1
@@ -473,7 +473,7 @@
 "Hure","Huren","f","puta, ramera",1
 "Hut","Hüte","m","sombrero",1
 "Hähnchen","Hähnchen","n","pollo",1
-"Händler","Händler","m","negociante, vendedor, tratante",78
+"Händler","Händler","m","negociante, vendedor, tratante",76
 "Höhenleitwerk","Höhenleitwerke","n","estabilizador horizontal",3
 "Hölle","-","f","infierno",1
 "Hülle","Hüllen","f","funda",1
@@ -559,7 +559,7 @@
 "Konsonant","Konsonanten","m","consonante",5
 "Kontakt","Kontakte","m","contacto",3
 "Konto","Konten","n","cuenta",3
-"Kontrolle","Kontrollen","f","control",13
+"Kontrolle","Kontrollen","f","control",12
 "Kopf","Köpfe","m","cabeza",1
 "Korrespondenz","Korrespondenzen","f","correspondencia",2
 "Korridor","Korridore","m","pasillo",1
@@ -866,7 +866,7 @@
 "Schmutz","-","m","suciedad, inmendicia, basura",1
 "Schnauze","Schnauzen","f","soplon, ser bocaza, hocico",1
 "Schnelligkeit","-","f","velocidad, rapidez",1
-"Schnitzel","Schnitzel","n","milanesa, escalope",3
+"Schnitzel","Schnitzel","n","milanesa, escalope",4
 "Schokolade","Schokoladen","f","chocolate",1
 "Schonzeit","Schonzeiten","f","tiempo de veda",1
 "Schornstein","Schornsteine","m","chimenea",1
@@ -927,8 +927,8 @@
 "Sphäre","Sphären","f","esfera",1
 "Spiegel","Spiegel","m","espejo",1
 "Spiel","Spiele","n","juego",2
-"Spieler","Spieler","m","jugador",74
-"Spielerin","Spielerinnen","f","jugadora",78
+"Spieler","Spieler","m","jugador",73
+"Spielerin","Spielerinnen","f","jugadora",77
 "Spinne","Spinnen","f","araña",1
 "Sport","-","m","deporte",3
 "Sprache","Sprachen","f","idioma",1
@@ -952,7 +952,7 @@
 "Steuersatz","Steuersätze","m","taze de impuesto",1
 "Stiefel","Stiefel","m","bota",1
 "Stier","Stiere","m","toro",1
-"Stimme","Stimmen","f","voz",1
+"Stimme","Stimmen","f","voz",2
 "Stoff","-","m","material",1
 "Straftat","Straftaten","f","delito",3
 "Strand","Strände","m","playa",1
@@ -1021,7 +1021,7 @@
 "Triebwerk","Triebwerke","n","motor, máquina",1
 "Tritt","Tritte","m","paso, puntapié, patada",1
 "Träne","Tränen","f","lágrima",1
-"Trümmerfeld","Trümmerfelder","n","campo de escombros",73
+"Trümmerfeld","Trümmerfelder","n","campo de escombros",72
 "Tuch","Tücher","n","pañuelo, trapo, capote",2
 "Turm","Türme","m","torre",1
 "Tätigkeit","Tätigkeiten","f","actividad, trabajo",1
@@ -1075,7 +1075,7 @@
 "Virus","Viren","n","virus",2
 "Visum","Visa/Visen","n","visa",1
 "Vogel","Vögel","m","pájaro",2
-"Vokabular","Vokabulare","n","vocabulario",10
+"Vokabular","Vokabulare","n","vocabulario",12
 "Vokal","Vokale","m","vocal",10
 "Volk","Völker","n","pueblo",1
 "Vordergrund","Vordergründe","m","primer plano, prioridad",1
@@ -1088,7 +1088,7 @@
 "Vorteil","Vorteile","m","ventaja",1
 "Vulkan","Vulkane","m","volcán",1
 "Waffe","Waffen","f","arma",1
-"Wagen","Wagen","m","coche",2
+"Wagen","Wagen","m","coche",3
 "Wahl","Wahlen","f","elección, opción",1
 "Wahlkreis","Wahlkreise","m","distrito electoral",1
 "Wahrheit","Wahrheiten","f","verdad",1
@@ -1175,7 +1175,7 @@
 "Zoff","-","m","pelea",2
 "Zoll","Zölle","m","aduana",1
 "Zoo","Zoos","m","zoológico",1
-"Zucker","Zucker","m","azucar",2
+"Zucker","Zucker","m","azucar",1
 "Zug","Züge","m","tren",1
 "Zugvogel","Zugvögel","m","ave migratoria",1
 "Zukunft","-","f","futuro, porvenir",5
@@ -1184,7 +1184,7 @@
 "Zusammenstoß","Zusammenstöße","m","colisión, choque, altercado, disputa",1
 "Zustand","Zustände","m","estado, situación",1
 "Zwerg","Zwerge","m","enano",1
-"Zwiebel","Zwiebeln","f","cebolla",2
+"Zwiebel","Zwiebeln","f","cebolla",3
 "Ärztin","Ärztinnen","f","médica",1
 "Ökonomie","Ökonomien","f","economia",4
 "Öl","Öle","n","aceite",1

@@ -13,8 +13,7 @@ In addiotion it loads the tools:
 """
 
 import tkinter as tk
-from tkinter import ttk
-from tkinter import filedialog
+from tkinter import ttk, filedialog
 from tkinter.messagebox import showinfo, showerror
 
 from pathlib import Path
@@ -26,75 +25,113 @@ class ControlFrame(tk.Frame):
 
         super().__init__(master)
         self.master = master
-        master.wm_title("WORDS!")
-        master.geometry("300x440")
+        master.wm_title("Word genders")
+        master.geometry("300x500")
         master.resizable(False, False)
         master.protocol("WM_DELETE_WINDOW", master.close_window)
-        
-        tk.Label(self, text="Configuration", font="Verdana 14 bold", fg="black").pack(
-            side="top", fill="x", pady=10
-        )
-        tk.Frame(self, height=2, bd=1, relief=tk.SUNKEN).pack(fill=tk.X, padx=5, pady=5)
+
+        # main titel
+        self.frame_confi = tk.Frame(self)
+        self.frame_confi.pack(side="top", padx="5", pady="5")
+        tk.Label(
+            self.frame_confi, text="Configuration", font="Verdana 14 bold", fg="black"
+        ).pack(side="top", fill="x", pady=10)
 
         # Training language
+        self.frame_training_language = tk.Frame(self)
+        self.frame_training_language.pack(side="top", padx="5", pady="5", fill="x")
+        tk.Frame(self.frame_training_language, height=2, bd=1, relief=tk.SUNKEN).pack(
+            fill=tk.X, padx=5, pady=5
+        )
         tk.Label(
-            self, text="Choose training language", font="Verdana 10 bold", fg="black"
+            self.frame_training_language,
+            text="Choose training language",
+            font="Verdana 10 bold",
+            fg="black",
         ).pack(side="top", fill="x", pady=10)
         self.selected_language = tk.StringVar()
         self.selected_language.set(self.master.configuration.language)
         tk.Radiobutton(
-            self, text="German", value="de", variable=self.selected_language, command=self.select_training_language
+            self.frame_training_language,
+            text="German",
+            value="de",
+            variable=self.selected_language,
+            command=self.select_training_language,
         ).pack()
         tk.Radiobutton(
-            self, text="Russian", value="ru", variable=self.selected_language, command=self.select_training_language
+            self.frame_training_language,
+            text="Russian",
+            value="ru",
+            variable=self.selected_language,
+            command=self.select_training_language,
         ).pack()
-        tk.Frame(self, height=2, bd=1, relief=tk.SUNKEN).pack(fill=tk.X, padx=5, pady=5)
 
         # Load dictionary
-        tk.Label(self, text="Load dictionary", font="Verdana 10 bold", fg="black").pack(
-            side="top", fill="x", pady=10
+        self.frame_load_dic = tk.Frame(self)
+        self.frame_load_dic.pack(side="top", padx="5", pady="5", fill="x")
+        tk.Frame(self.frame_load_dic, height=2, bd=1, relief=tk.SUNKEN).pack(
+            fill=tk.X, padx=5, pady=5
         )
+        tk.Label(
+            self.frame_load_dic,
+            text="Load dictionary",
+            font="Verdana 10 bold",
+            fg="black",
+        ).pack(side="top", fill="x", pady=10)
         self.active_dictionary = tk.Label(
-            self, text=self.master.dictionary.name, font="Purisa 9 bold", fg="green"
+            self.frame_load_dic,
+            text=self.master.dictionary.name,
+            font="Purisa 9 bold",
+            fg="green",
         )
         self.active_dictionary.pack(side="top", fill="x", pady=10)
-        ttk.Button(self, width=15, text="Open a File", command=self.select_file).pack(
-            expand=True
-        )
-        tk.Frame(self, height=2, bd=1, relief=tk.SUNKEN).pack(fill=tk.X, padx=5, pady=5)
+        ttk.Button(
+            self.frame_load_dic, width=15, text="Load file", command=self.select_file
+        ).pack(padx="3", side=tk.LEFT)
+        ttk.Button(
+            self.frame_load_dic, width=15, text="Dict info", command=self.select_file
+        ).pack(padx="3", side=tk.LEFT)
 
         # Tools
-        tk.Label(self, text="Tools", font="Verdana 12 bold", fg="black").pack(
-            side="top", fill="x", pady=10
+        self.frame_tools = tk.Frame(self)
+        self.frame_tools.pack(side="top", padx="5", pady="5", fill="x")
+        tk.Frame(self.frame_tools, height=2, bd=1, relief=tk.SUNKEN).pack(
+            fill=tk.X, padx=5, pady=5
         )
+        tk.Label(
+            self.frame_tools, text="Tools", font="Verdana 12 bold", fg="black"
+        ).pack(side="top", fill="x", pady=10)
         tk.Button(
-            self,
+            self.frame_tools,
             width=15,
             text="Nouns genders",
             command=self.switch_nouns_frame,
-        ).pack(expand=True)
+        ).pack(padx=5, pady=5)
         tk.Button(
-            self,
+            self.frame_tools,
             width=15,
             text="Meanings",
-            command=lambda :master.switch_frame("nouns"),
-        ).pack(expand=True)
+            command=lambda: master.switch_frame("nouns"),
+        ).pack(padx=5, pady=5)
         tk.Button(
-            self,
+            self.frame_tools,
             width=15,
             text="Manage words",
-            command=lambda :master.switch_frame("add_delete"),
-        ).pack(expand=True)
+            command=lambda: master.switch_frame("add_delete"),
+        ).pack(padx=5, pady=5)
 
     def switch_nouns_frame(self):
         if self.master.dictionary.kind == "nouns":
             self.master.switch_frame("nouns")
         else:
-            showerror(title="Wrong dictionary", message=f"The dictionary {self.master.dictionary.name} is not for nouns.")
+            showerror(
+                title="Wrong dictionary",
+                message=f"The dictionary {self.master.dictionary.name} is not for nouns.",
+            )
 
     def select_training_language(self):
         self.master.configuration.load_configuration(self.selected_language.get())
-        
+
     def select_file(self):
         filetypes = (("Data files", "*.csv"), ("All files", "*.*"))
 
