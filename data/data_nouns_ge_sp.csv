@@ -33,7 +33,7 @@
 "Alkohol","Alkohole","m","alcohol",1
 "Allee","Alleen","f","avenida",1
 "Allergie","Allergien","f","alergia",1
-"Allianz","Allianzen","f","alianza",74
+"Allianz","Allianzen","f","alianza",73
 "Alter","-","n","edad",4
 "Ameise","Ameisen","f","hormiga",1
 "Ampel","Ampeln","f","semáforo",1
@@ -127,7 +127,7 @@
 "Bekanntschaft","Bekanntschaften","f","relación amistosa",1
 "Bekleidung","Bekleidungen","f","vestimenta, ropa",1
 "Bemerkung","Bemerkungen","f","comentario, observación",1
-"Benzin","Benzine","n","nafta",2
+"Benzin","Benzine","n","nafta",1
 "Beratung","Beratungen","f","consejo, asesoramiento",1
 "Bereich","Bereiche","m","rango, zona, sector, terreno",1
 "Berg","Berge","m","montaña, monte",1
@@ -177,7 +177,7 @@
 "Brand","Brände","m","fuego, incendio, sed",1
 "Brandwunde","Brandwunden","f","quemadura",1
 "Bratwurst","Bratwürste","f","salchicha frita",1
-"Brei","Breie","m","papilla, puré",20
+"Brei","Breie","m","papilla, puré",19
 "Brennstoff","Brennstoffe","m","combustible",1
 "Brief","Briefe","m","carta",2
 "Brille","Brillen","f","lentes, gafas",1
@@ -259,7 +259,7 @@
 "Einlagensicherung","-","f","garantía de depósito",1
 "Einleger","Einleger","m","depositante",1
 "Einlegerin","Einlegerinnen","f","depositante",1
-"Einstellung","Einstellungen","f","ajuste, configuración",74
+"Einstellung","Einstellungen","f","ajuste, configuración",73
 "Einzug","Einzüge","m","recaudación, entrada, ingreso",1
 "Eis","-","n","hielo",1
 "Eisbär","Eisbären","m","oso polar",1
@@ -285,7 +285,7 @@
 "Erde","-","f","planeta tierra",1
 "Erfahrung","Erfahrungen","f","experiencia",1
 "Erfolg","Erfolge","m","éxito, resultado",1
-"Ergebnis","Ergebnisse","n","resultado, consecuencia",4
+"Ergebnis","Ergebnisse","n","resultado, consecuencia",5
 "Erklärung","Erklärungen","f","explicación, razón, declaración, comentario",1
 "Erlaubnis","Erlaubnisse","f","permiso",12
 "Erläuterung","Erläuterungen","f","explicación, comentario",1
@@ -336,7 +336,7 @@
 "Fleisch","-","n","carne",1
 "Fliege","Fliegen","f","mosca",1
 "Flinte","Flinten","f","escopeta",1
-"Flotte","Flotten","f","flota",72
+"Flotte","Flotten","f","flota",69
 "Flug","Flüge","m","vuelo",3
 "Flugleistung","Flugleistungen","f","rendimiento de vuelo",1
 "Flugzeug","Flugzeuge","n","avión",1
@@ -388,7 +388,7 @@
 "Gegenwart","-","f","actualidad, presente",1
 "Gehalt","Gehälter","n","sueldo, salario",1
 "Gehörsinn","-","m","sentido del oído",1
-"Geist","Geister","m","espíritu, fantasma",12
+"Geist","Geister","m","espíritu, fantasma",15
 "Geld","-","n","dinero",1
 "Gelegenheit","Gelegenheiten","f","oportunidad",1
 "Gelände","Gelände","n","terreno",1
@@ -413,7 +413,7 @@
 "Gesundheit","-","f","salud, prosperidad",1
 "Gewehr","Gewehre","n","fusil",2
 "Gewicht","-","n","peso, importancia",22
-"Gewicht","Gewichte","f","pesa",18
+"Gewicht","Gewichte","f","pesa",17
 "Gewitter","Gewitter","n","tormenta, temporal",1
 "Gitarre","Gitarren","f","guitarra",1
 "Glas","Gläser","n","vaso",1
@@ -473,7 +473,7 @@
 "Hure","Huren","f","puta, ramera",1
 "Hut","Hüte","m","sombrero",1
 "Hähnchen","Hähnchen","n","pollo",1
-"Händler","Händler","m","negociante, vendedor, tratante",76
+"Händler","Händler","m","negociante, vendedor, tratante",75
 "Höhenleitwerk","Höhenleitwerke","n","estabilizador horizontal",3
 "Hölle","-","f","infierno",1
 "Hülle","Hüllen","f","funda",1
@@ -535,13 +535,13 @@
 "Kleber","Kleber","m","pegamento",1
 "Klebstoff","Klebstoffe","m","pegamento",1
 "Kleid","Kleider","n","vestido",4
-"Kleidung","Kleidungen","f","ropa",3
+"Kleidung","Kleidungen","f","ropa",2
 "Kletterer","Kletterer","m","escalador",1
 "Klettererin","Klettererinnen","f","escaladora",1
 "Klient","Klienten","m","cliente",5
 "Klientin","Klientinnen","f","clienta",1
 "Klimaveränderung","Klimaveränderungen","f","cambio climático",1
-"Klimawandel","-","m","cambio climático",4
+"Klimawandel","-","m","cambio climático",3
 "Klotz","Klötze","m","bloque",1
 "Klub","Klubs","m","club",1
 "Knabe","Knaben","m","chico, muchacho",5
@@ -561,7 +561,7 @@
 "Konto","Konten","n","cuenta",3
 "Kontrolle","Kontrollen","f","control",12
 "Kopf","Köpfe","m","cabeza",1
-"Korrespondenz","Korrespondenzen","f","correspondencia",2
+"Korrespondenz","Korrespondenzen","f","correspondencia",4
 "Korridor","Korridore","m","pasillo",1
 "Kraft","Kräfte","f","fuerza",1
 "Kran","Krane/Kräne","m","grúa",1
@@ -927,8 +927,8 @@
 "Sphäre","Sphären","f","esfera",1
 "Spiegel","Spiegel","m","espejo",1
 "Spiel","Spiele","n","juego",2
-"Spieler","Spieler","m","jugador",73
-"Spielerin","Spielerinnen","f","jugadora",77
+"Spieler","Spieler","m","jugador",72
+"Spielerin","Spielerinnen","f","jugadora",76
 "Spinne","Spinnen","f","araña",1
 "Sport","-","m","deporte",3
 "Sprache","Sprachen","f","idioma",1
@@ -1021,7 +1021,7 @@
 "Triebwerk","Triebwerke","n","motor, máquina",1
 "Tritt","Tritte","m","paso, puntapié, patada",1
 "Träne","Tränen","f","lágrima",1
-"Trümmerfeld","Trümmerfelder","n","campo de escombros",72
+"Trümmerfeld","Trümmerfelder","n","campo de escombros",71
 "Tuch","Tücher","n","pañuelo, trapo, capote",2
 "Turm","Türme","m","torre",1
 "Tätigkeit","Tätigkeiten","f","actividad, trabajo",1
@@ -1065,7 +1065,7 @@
 "Verlust","Verluste","m","pérdida, daño",1
 "Vermögen","Vermögen","n","bienes, fortuna, patrimonio, capital, capacidad",3
 "Versicherung","Versicherungen","f","seguro",1
-"Versorgung","-","f","sustento, abastecimiento",71
+"Versorgung","-","f","sustento, abastecimiento",70
 "Versprechen","Versprechen","n","promesa",1
 "Verstärkung","Verstärkungen","f","refuerzo",1
 "Verteidigung","Verteidigungen","f","defensa",74
@@ -1088,7 +1088,7 @@
 "Vorteil","Vorteile","m","ventaja",1
 "Vulkan","Vulkane","m","volcán",1
 "Waffe","Waffen","f","arma",1
-"Wagen","Wagen","m","coche",3
+"Wagen","Wagen","m","coche",2
 "Wahl","Wahlen","f","elección, opción",1
 "Wahlkreis","Wahlkreise","m","distrito electoral",1
 "Wahrheit","Wahrheiten","f","verdad",1
@@ -1144,7 +1144,7 @@
 "Wolf","Wölfe","m","lobo",1
 "Wolke","Wolken","f","nube",1
 "Wort","Worte/Wörter","n","palabra",1
-"Wortschatz","Wortschätze","m","léxico, vocabulario",19
+"Wortschatz","Wortschätze","m","léxico, vocabulario",20
 "Wunde","Wunden","f","herida",1
 "Wunder","Wunder","n","maravilla, milagro",6
 "Wunsch","Wünsche","m","deseo",1
@@ -1193,5 +1193,5 @@
 "Überraschung","Überraschungen","f","sorpresa",1
 "Überschrift","Überschriften","f","título, encabezado",1
 "Übersetzung","Übersetzungen","f","traducción",1
-"Übersicht","Übersichten","f","resumen, vista general",82
+"Übersicht","Übersichten","f","resumen, vista general",80
 "Übung","Übungen","f","práctica, ejercicio",1

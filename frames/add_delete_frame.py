@@ -24,7 +24,8 @@ class AddDeleteFrame(tk.Frame):
         tk.Label(
             self.frame_singular, text="Singular:   ", font="Verdana 10", fg="black"
         ).pack(side=tk.LEFT, padx="5", pady="5")
-        self.my_entry_singular = tk.Entry(self.frame_singular, width=50)
+        self.singular = tk.StringVar()
+        self.my_entry_singular = tk.Entry(self.frame_singular, width=50, textvariable = self.singular)
         self.my_entry_singular.pack(side=tk.LEFT, padx="5")
 
         # subframe plural
@@ -33,7 +34,8 @@ class AddDeleteFrame(tk.Frame):
         tk.Label(
             self.frame_plural, text="Plural:       ", font="Verdana 10", fg="black"
         ).pack(side=tk.LEFT, padx="5", pady="5")
-        self.my_entry_plural = tk.Entry(self.frame_plural, width=50)
+        self.plural = tk.StringVar()
+        self.my_entry_plural = tk.Entry(self.frame_plural, width=50, textvariable = self.plural)
         self.my_entry_plural.pack(side=tk.LEFT, padx="5")
 
         # subframe meanings
@@ -42,7 +44,8 @@ class AddDeleteFrame(tk.Frame):
         tk.Label(
             self.frame_meanings, text="Meanings:", font="Verdana 10", fg="black"
         ).pack(side=tk.LEFT, padx="5", pady="5")
-        self.my_entry_meanings = tk.Entry(self.frame_meanings, width=50)
+        self.meanings = tk.StringVar()
+        self.my_entry_meanings = tk.Entry(self.frame_meanings, width=50, textvariable = self.meanings)
         self.my_entry_meanings.pack(side=tk.LEFT, padx="5")
 
         # subframe gender
@@ -59,7 +62,7 @@ class AddDeleteFrame(tk.Frame):
         ).pack(side=tk.LEFT, padx="5")
         tk.Radiobutton(
             self.frame_gender,
-            text=", Feminine",
+            text="Feminine",
             value="f",
             variable=self.selected_gender,
             command=self.switch_gender,
@@ -87,7 +90,7 @@ class AddDeleteFrame(tk.Frame):
             self.frame_actions, width=10, text="Delete", command=self.switch_gender
         ).pack(side=tk.LEFT, padx="5")
         tk.Button(
-            self.frame_actions, width=10, text="clean", command=self.switch_gender
+            self.frame_actions, width=10, text="Clean", command=self.clean_entries
         ).pack(side=tk.LEFT, padx="5")
 
         tk.Frame(self, height=2, bd=1, relief=tk.SUNKEN).pack(fill=tk.X, padx=5, pady=5)
@@ -108,12 +111,11 @@ class AddDeleteFrame(tk.Frame):
     def switch_gender(self):
         print(self.selected_gender.get())
 
-        """
-        tk.Button(
-            frame_gender,
-            width=15,
-            text="Masulin",
-            command=self.switch_gender,
-        ).pack(side=tk.LEFT, padx="5")
+    def clean_entries(self):
+        self.singular.set("")
+        self.plural.set("")
+        self.meanings.set("")
+        self.selected_gender.set("")
         
-        """
+    
+    
