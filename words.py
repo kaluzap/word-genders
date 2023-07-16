@@ -1,7 +1,7 @@
 import tkinter as tk
 from frames.control_frame import ControlFrame
 from frames.nouns_frame import NounsFrame
-from frames.add_delete_frame import AddDeleteFrame
+from frames.manage_words_frame import ManageWordsFrame
 
 # from frames.meanings_frame import MeaningsFrame
 from util.dictionary import Dictionary
@@ -15,7 +15,7 @@ class App(tk.Tk):
         self.dictionary = Dictionary()
         self.configuration = Configuration()
 
-        self.all_frames = {"control": ControlFrame, "nouns": NounsFrame, "add_delete":AddDeleteFrame}
+        self.all_frames = {"control": ControlFrame, "nouns": NounsFrame, "manage_words":ManageWordsFrame}
         self._frame = None
         self.switch_frame("control")
 

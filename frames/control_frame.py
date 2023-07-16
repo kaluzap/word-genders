@@ -117,7 +117,7 @@ class ControlFrame(tk.Frame):
             self.frame_tools,
             width=15,
             text="Manage words",
-            command=lambda: master.switch_frame("add_delete"),
+            command=lambda: master.switch_frame("manage_words"),
         ).pack(padx=5, pady=5)
 
     def switch_nouns_frame(self):
