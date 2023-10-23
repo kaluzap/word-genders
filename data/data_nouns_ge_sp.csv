@@ -14,7 +14,7 @@
 "Abschiedsfeier","Abschiedsfeiern","f","fiesta de despedida",2.0
 "Abschiedsfest","Abschiedsfeste","n","fiesta de despedida",1.0
 "Abschreiben","-","n","transcripción, copia",17.0
-"Abschreibung","Abschreibungen","f","deducción, amortización, desvalorización",4.0
+"Abschreibung","Abschreibungen","f","deducción, amortización, desvalorización",3.0
 "Absender","Absender","m","remitente (m)",2.0
 "Absenderin","Absenderinnen","f","remitente (f)",1.0
 "Abstand","Abstände","m","distancia, diferencia",1.0
@@ -26,14 +26,15 @@
 "Ahnung","Ahnungen","f","idea",1.0
 "Akku","Akkus","m","acumulador, batería",8.0
 "Akkusativ","Akkusative","m","acusativo",1.0
-"Aktion","Aktionen","f","acción, promoción",99.0
+"Aktion","Aktionen","f","acción, promoción",98.0
 "Aktivität","Aktivitäten","f","actividad",1.0
 "Aktualität","-","f","actualidad",1.0
 "Albtraum","Albträume","m","pesadilla",1.0
 "Alkohol","Alkohole","m","alcohol",1.0
 "Allee","Alleen","f","avenida",1.0
 "Allergie","Allergien","f","alergia",1.0
-"Allianz","Allianzen","f","alianza",73.0
+"Allianz","Allianzen","f","alianza",72.0
+"Alltag","Alltage","m","día normal",92.0
 "Alter","-","n","edad",4.0
 "Ameise","Ameisen","f","hormiga",1.0
 "Ampel","Ampeln","f","semáforo",1.0
@@ -43,7 +44,7 @@
 "Angebot","Angebote","n","oferta",1.0
 "Angehörige","Angehörigen","mf","pariente, miembro, militante",1.0
 "Angst","Ängste","f","miedo",1.0
-"Anhang","Anhänge","m","apéndice, adjunto",1.0
+"Anhang","Anhänge","m","apéndice, adjunto",2.0
 "Ankunft","-","f","llegada",8.0
 "Anlage","Anlagen","f","instalación",1.0
 "Anleitung","Anleitungen","f","dirección, instrucciones",1.0
@@ -54,7 +55,7 @@
 "Antenne","Antennen","f","antena",1.0
 "Antonym","Antonyme","n","antónimo",1.0
 "Antrag","Anträge","m","solicitud",1.0
-"Antwort","Antworten","f","respuesta, contestación",5.0
+"Antwort","Antworten","f","respuesta, contestación",6.0
 "Anwalt","Anwälte","m","abogado",1.0
 "Anwohner","Anwohner","m","vecino, residente",1.0
 "Anwohnerin","Anwohnerinnen","f","vecina, residenta",1.0
@@ -71,8 +72,8 @@
 "Arzt","Ärzte","m","médico",1.0
 "Asylant","Asylanten","m","asilado",1.0
 "Asylantin","Asylantinnen","f","asilada",1.0
-"Atmen","-","n","respiración",14.0
-"Attest","Atteste","n","certificado médico",15.0
+"Atmen","-","n","respiración",15.0
+"Attest","Atteste","n","certificado médico",16.0
 "Aufenthalt","Aufenthalte","m","residencia",1.0
 "Aufenthaltstitel","Aufenthaltstitel","m","título de residencia",1.0
 "Aufgabe","Aufgaben","f","tarea",1.0
@@ -91,6 +92,7 @@
 "Ausländerbehörde","Ausländerbehörden","f","autoridad de extranjería",1.0
 "Ausländerin","Ausländerinnen","f","extranjera",1.0
 "Ausmaß","Ausmaße","n","dimensión, magnitud",2.0
+"Aussage","Aussagen","f","declaración",98.0
 "Ausweis","Ausweise","m","documento",1.0
 "Auszug","Auszüge","m","mudanza",1.0
 "Auto","Autos","n","auto",1.0
@@ -131,6 +133,7 @@
 "Beratung","Beratungen","f","consejo, asesoramiento",1.0
 "Bereich","Bereiche","m","rango, zona, sector, terreno",1.0
 "Berg","Berge","m","montaña, monte",1.0
+"Bericht","Berichte","m","reportaje, informe",100.0
 "Beruf","Berufe","m","profesión",5.0
 "Berufserfahrung","Berufserfahrungen","f","experiencia profesional",1.0
 "Bescheid","Bescheide","m","información, notificación, noticia",1.0
@@ -150,9 +153,9 @@
 "Betrug","-","m","engaño, estafa, fraude, tranpa",2.0
 "Bett","Betten","n","cama",2.0
 "Bewegung","Bewegungen","f","movimiento",1.0
-"Beweis","Beweise","m","prueba, muestra",15.0
+"Beweis","Beweise","m","prueba, muestra",16.0
 "Bewohner","Bewohner","m","habitante, ocupante",1.0
-"Biene","Bienen","f","abeja",2.0
+"Biene","Bienen","f","abeja",1.0
 "Bier","Biere","n","cerveza",1.0
 "Bild","Bilder","n","cuadro",1.0
 "Bildung","-","f","educación",1.0
@@ -177,7 +180,7 @@
 "Brand","Brände","m","fuego, incendio, sed",1.0
 "Brandwunde","Brandwunden","f","quemadura",1.0
 "Bratwurst","Bratwürste","f","salchicha frita",1.0
-"Brei","Breie","m","papilla, puré",19.0
+"Brei","Breie","m","papilla, puré",21.0
 "Brennstoff","Brennstoffe","m","combustible",1.0
 "Brief","Briefe","m","carta",2.0
 "Brille","Brillen","f","lentes, gafas",1.0
@@ -203,7 +206,7 @@
 "Chef","Chefs","m","Jefe",1.0
 "Chefin","Chefinnen","f","Jefa",1.0
 "Chemikalie","Chemikalien","f","sustancia química",1.0
-"Cleverness","-","f","agudeza, listeza, sutileza",8.0
+"Cleverness","-","f","agudeza, listeza, sutileza",11.0
 "Club","Clubs","m","club",1.0
 "Computer","Computer","m","computadora",1.0
 "Cousin","Cousins","m","primo",1.0
@@ -224,7 +227,7 @@
 "Dezember","Dezember","m","diciembre",1.0
 "Dieb","Diebe","m","ladrón",1.0
 "Diebin","Diebinnen","f","ladrona",1.0
-"Dienst","Dienste","m","servicio, función",4.0
+"Dienst","Dienste","m","servicio, función",3.0
 "Dienstag","Dienstage","m","martes",1.0
 "Ding","Dinge","n","cosa",1.0
 "Diplom","Diplome","n","diploma",1.0
@@ -236,7 +239,7 @@
 "Dreck","-","m","mugre, porquería, barro",1.0
 "Droge","Drogen","f","droga",1.0
 "Drohne","Drohnen","f","zángano",1.0
-"Drucker","Drucker","m","impresora",1.0
+"Drucker","Drucker","m","impresora",2.0
 "Durst","-","m","sed",1.0
 "Dusche","Duschen","f","ducha",1.0
 "E-Mail","E-Mail","f","e-mail",1.0
@@ -245,7 +248,7 @@
 "Ehe","Ehen","f","matrimonio",1.0
 "Ehefrau","Ehefrauen","f","esposa",1.0
 "Ehemann","Ehemänner","m","esposo",1.0
-"Ehre","Ehren","f","honor",80.0
+"Ehre","Ehren","f","honor",81.0
 "Ei","Eier","n","huevo",1.0
 "Eiche","Eichen","f","roble",8.0
 "Eichhörnchen","Eichhörnchen","n","ardilla",1.0
@@ -259,7 +262,7 @@
 "Einlagensicherung","-","f","garantía de depósito",1.0
 "Einleger","Einleger","m","depositante",1.0
 "Einlegerin","Einlegerinnen","f","depositante",1.0
-"Einstellung","Einstellungen","f","ajuste, configuración",73.0
+"Einstellung","Einstellungen","f","ajuste, configuración",72.0
 "Einzug","Einzüge","m","recaudación, entrada, ingreso",1.0
 "Eis","-","n","hielo",1.0
 "Eisbär","Eisbären","m","oso polar",1.0
@@ -272,7 +275,7 @@
 "Empfängerin","Empfängerinnen","f","destinataria",1.0
 "Ende","Enden","n","final, fin, extremo",5.0
 "Engel","Engel","m","angel",1.0
-"Englisch","-","n","inglés",1.0
+"Englisch","-","n","inglés",2.0
 "Ente","Enten","f","pato",1.0
 "Entfernung","Entfernungen","f","distancia, eliminación, alejamiento",1.0
 "Entfremdung","Entfremdungen","f","distancia",1.0
@@ -287,7 +290,7 @@
 "Erfolg","Erfolge","m","éxito, resultado",1.0
 "Ergebnis","Ergebnisse","n","resultado, consecuencia",5.0
 "Erklärung","Erklärungen","f","explicación, razón, declaración, comentario",1.0
-"Erlaubnis","Erlaubnisse","f","permiso",12.0
+"Erlaubnis","Erlaubnisse","f","permiso",11.0
 "Erläuterung","Erläuterungen","f","explicación, comentario",1.0
 "Ersatz","-","m","sustitución",1.0
 "Erwachsene","Erwachsenen","mf","adulto",7.0
@@ -298,13 +301,13 @@
 "Essen","Essen","n","comida",1.0
 "Etage","Etagen","f","piso, planta",1.0
 "Event","Events","mn","evento",1.0
-"Explosion","Explosionen","f","explosión",2.0
+"Explosion","Explosionen","f","explosión",4.0
 "Fahne","Fahnen","f","bandera",1.0
 "Fahrkarte","Fahrkarten","f","boleto",1.0
 "Fahrrad","Fahrräder","n","bicicleta",1.0
 "Fahrschein","Fahrscheine","m","boleto",2.0
 "Fahrstreifen","Fahrstreifen","m","carril",1.0
-"Fall","Fälle","m","caso",2.0
+"Fall","Fälle","m","caso",3.0
 "Familie","Familien","f","familia",1.0
 "Familienangehöriger","Familienangehörigen","m","miembro de la familia",2.0
 "Farbe","Farben","f","color",1.0
@@ -330,13 +333,13 @@
 "Finale","Finale","n","final (competencia)",1.0
 "Firma","Firmen","f","empresa",1.0
 "Fisch","Fische","m","pescado",1.0
-"Flair","-","m","encanto, ambiente",14.0
+"Flair","-","m","encanto, ambiente",15.0
 "Flasche","Flaschen","f","botella",1.0
 "Fledermaus","Fledermäuse","f","murciélago",3.0
 "Fleisch","-","n","carne",1.0
 "Fliege","Fliegen","f","mosca",1.0
 "Flinte","Flinten","f","escopeta",1.0
-"Flotte","Flotten","f","flota",69.0
+"Flotte","Flotten","f","flota",66.0
 "Flug","Flüge","m","vuelo",3.0
 "Flugleistung","Flugleistungen","f","rendimiento de vuelo",1.0
 "Flugzeug","Flugzeuge","n","avión",1.0
@@ -355,12 +358,15 @@
 "Freiheit","-","f","libertad",2.0
 "Freitag","Freitage","m","viernes",1.0
 "Fremde","Fremden","mf","extranjero, forastero, desconocido",1.0
-"Freude","-","f","alegría",5.0
+"Fremdsprache","Fremdsprachen","f","lengua extranjera",100.0
+"Freude","-","f","alegría",4.0
 "Freund","Freunde","m","amigo",2.0
 "Freundin","Freundinnen","f","amiga",1.0
 "Frisur","Frisuren","f","peinado",1.0
 "Front","Fronten","f","frente",1.0
 "Frosch","Frösche","m","rana",1.0
+"Frühaufsteher","Frühaufsteher","m","madrugador",98.0
+"Frühaufsteherin","Frühaufsteherinnen","f","madrugadora",93.0
 "Frühling","Frühlinge","m","primavera",1.0
 "Frühstück","Frühstücke","n","desayuno",1.0
 "Funke","Funken","m","chispa electrica",1.0
@@ -370,7 +376,7 @@
 "Füller","Füller","m","pluma, lapicera",1.0
 "Gabel","Gabeln","f","tenedor",1.0
 "Galaxie","Galaxien","f","galaxia",1.0
-"Galaxie","Galaxien","f","galaxia",79.0
+"Galaxie","Galaxien","f","galaxia",78.0
 "Gardine","Gardinen","f","cortina",1.0
 "Garten","Gärten","m","jardín",1.0
 "Gast","Gäste","m","huesped",1.0
@@ -392,6 +398,7 @@
 "Geld","-","n","dinero",1.0
 "Gelegenheit","Gelegenheiten","f","oportunidad",1.0
 "Gelände","Gelände","n","terreno",1.0
+"Gemeinsamkeit","Gemeinsamkeiten","f","característica común",97.0
 "Gemüse","Gemüse","n","verdura",1.0
 "Genitiv","Genitive","m","genitivo",2.0
 "Genossenschaft","Genossenschaften","f","cooperativa",1.0
@@ -404,7 +411,7 @@
 "Geschirr","Geschirre","n","vajilla",1.0
 "Geschmackssinn","-","m","sentido del gusto",1.0
 "Geschwindigkeit","Geschwindigkeiten","f","velocidad",1.0
-"Geschäft","Geschäfte","n","negocio",8.0
+"Geschäft","Geschäfte","n","negocio",7.0
 "Gesellschaft","Gesellschaften","f","asociación, compañía",1.0
 "Gesetz","Gesetze","n","ley",1.0
 "Gesicht","Gesichter","n","cara",1.0
@@ -414,32 +421,33 @@
 "Gewehr","Gewehre","n","fusil",2.0
 "Gewicht","-","n","peso, importancia",22.0
 "Gewicht","Gewichte","f","pesa",17.0
-"Gewitter","Gewitter","n","tormenta, temporal",1.0
+"Gewitter","Gewitter","n","tormenta, temporal",2.0
 "Gitarre","Gitarren","f","guitarra",1.0
 "Glas","Gläser","n","vaso",1.0
 "Glaube","-","m","fe, creencias",4.0
 "Gleichgewicht","-","n","equilibrio",4.0
-"Glück","-","n","suerte",2.0
+"Glück","-","n","suerte",3.0
 "Glühbirne","Glühbirnen","f","foco",1.0
 "Grammatik","Grammatiken","f","gramática",1.0
 "Grashüpfer","Grashüpfer","m","saltamontes",1.0
 "Grenze","Grenzen","f","frontera",1.0
+"Griff","Griffe","m","agarre, mango, puño",100.0
 "Grill","Grills","m","asado",1.0
 "Großartigkeit","-","f","grandiosidad, magnificencia",12.0
 "Großmutter","Großmütter","f","abuela",1.0
 "Großvater","Großväter","m","abuelo",1.0
 "Grund","Gründe","m","suelo, base, fundamento",1.0
 "Grundschule","Grundschulen","f","escuela primaria",1.0
-"Grundwissen","-","n","conocimientos básicos",11.0
+"Grundwissen","-","n","conocimientos básicos",10.0
 "Gymnasium","Gymnasien","n","escuela media, secundaria",1.0
 "Gürtel","Gürtel","m","cinturón",3.0
 "Hafen","Häfen","m","puerto",1.0
 "Hagel","Hagel","m","granizo (tormenta)",8.0
 "Hagelkorn","Hagelkörner","n","granizo (piedra)",9.0
-"Halt","Halte/Halts","m","apoyo, sostén, parada",10.0
+"Halt","Halte/Halts","m","apoyo, sostén, parada",9.0
 "Hamburger","Hamburger","m","hamburguesa",1.0
 "Hand","Hände","f","mano",1.0
-"Handschuh","Handschuhe","m","guante",6.0
+"Handschuh","Handschuhe","m","guante",7.0
 "Handtuch","Handtücher","n","toalla",1.0
 "Handy","Handys","n","móvil, celular",1.0
 "Hangar","Hangars","m","hangar",1.0
@@ -473,7 +481,7 @@
 "Hure","Huren","f","puta, ramera",1.0
 "Hut","Hüte","m","sombrero",1.0
 "Hähnchen","Hähnchen","n","pollo",1.0
-"Händler","Händler","m","negociante, vendedor, tratante",75.0
+"Händler","Händler","m","negociante, vendedor, tratante",67.0
 "Höhenleitwerk","Höhenleitwerke","n","estabilizador horizontal",3.0
 "Hölle","-","f","infierno",1.0
 "Hülle","Hüllen","f","funda",1.0
@@ -482,7 +490,7 @@
 "Ignoranz","-","f","ignorancia",2.0
 "Immigrant","Immigranten","m","inmigrante",3.0
 "Immigrantin","Immigrantinnen","f","inmigrante",1.0
-"Imperium","Imperien","n","imperio",74.0
+"Imperium","Imperien","n","imperio",72.0
 "Impfstoff","Impfstoffe","m","vacuna",6.0
 "Impfung","Impfungen","f","vacunación",1.0
 "Injektion","Injektionen","f","inyección",8.0
@@ -502,6 +510,7 @@
 "Jägerin","Jägerinnen","f","cazadora",1.0
 "Kabel","Kabel","n","cable",3.0
 "Kaffee","Kaffees","m","café",1.0
+"Kaffeebohne","Kaffeebohnen","f","grano de café",98.0
 "Kalb","Kälber","n","ternero/a",1.0
 "Kampagne","Kampagnen","f","campaña",1.0
 "Kampf","Kämpfe","m","lucha, combate",1.0
@@ -557,9 +566,9 @@
 "Kommunikation","-","f","comunicación",1.0
 "Konjugation","Konjugationen","f","conjugación",3.0
 "Konsonant","Konsonanten","m","consonante",5.0
-"Kontakt","Kontakte","m","contacto",3.0
+"Kontakt","Kontakte","m","contacto",2.0
 "Konto","Konten","n","cuenta",3.0
-"Kontrolle","Kontrollen","f","control",12.0
+"Kontrolle","Kontrollen","f","control",11.0
 "Kopf","Köpfe","m","cabeza",1.0
 "Korrespondenz","Korrespondenzen","f","correspondencia",4.0
 "Korridor","Korridore","m","pasillo",1.0
@@ -598,6 +607,8 @@
 "Körperhaltung","Körperhaltungen","f","postura",1.0
 "Küche","Küchen","f","cocina",5.0
 "Kühlschrank","Kühlschränke","m","heladera",1.0
+"Künstler","Künstler","m","artista",95.0
+"Künstlerin","Künstlerinnen","f","artista",94.0
 "Kürbis","Kürbisse","m","zapallo",8.0
 "Küste","Küsten","f","costa",1.0
 "LKW","LKWs","m","camión",1.0
@@ -625,7 +636,7 @@
 "Lineal","Lineale","n","regla",10.0
 "Loch","Löcher","n","agujero",1.0
 "Lokführer","Lokführer","m","maquinista de tren",2.0
-"Lokführerin","Lokführerinnen","f","maquinista de tren",5.0
+"Lokführerin","Lokführerinnen","f","maquinista de tren",4.0
 "Lokomotive","Lokomotiven","f","locomotora",2.0
 "Losung","Losungen","f","lema, consigna",1.0
 "Lotterie","Lotterien","f","loteria",1.0
@@ -651,7 +662,7 @@
 "Material","Materialien","n","material",1.0
 "Mauer","Mauern","f","muro",1.0
 "Maus","Mäuse","f","ratón",1.0
-"Maß","Maße","n","medida, dimensión",15.0
+"Maß","Maße","n","medida, dimensión",16.0
 "Maßnahme","Maßnahmen","f","medida",1.0
 "Mechanik","-","f","física - mecánica",1.0
 "Medikament","Medikamente","n","medicamento, remedio",2.0
@@ -682,13 +693,14 @@
 "Mond","Monde","m","luna",1.0
 "Monitor","Monitoren","m","monitor, pantalla",1.0
 "Montag","Montage","m","lunes",1.0
+"Morgenmuffel","Morgenmuffel","m","cascarrabias mañanera",101.0
 "Moskito","Moskitos","m","mosquito",1.0
 "Motel","Motels","n","motel",1.0
 "Motor","Motoren","m","motor",1.0
 "Motto","Mottos","n","lema",1.0
 "Mund","Münder","m","boca",1.0
 "Museum","Museen","n","museo",1.0
-"Musik","-","f","música",3.0
+"Musik","-","f","música",5.0
 "Mutter","Mütter","f","madre",2.0
 "Mädchen","Mädchen","n","niña",1.0
 "Märchen","Märchen","n","cuento de hadas",1.0
@@ -710,18 +722,19 @@
 "Neffe","Neffen","m","sobrino",1.0
 "Nerv","Nerven","m","nervio",11.0
 "Netzwerk","Netzwerke","n","red",2.0
-"Neugierde","-","f","curiosidad",3.0
+"Neugierde","-","f","curiosidad",2.0
 "Neuigkeit","Neuigkeiten","f","novedad",1.0
 "Neutrum","Neutra","n","género neutro",1.0
 "Nichte","Nichten","f","sobrina",1.0
 "Nichts","-","n","nada",1.0
 "Niederlassung","-","f","establecimiento",1.0
-"Niederschlag","Niederschläge","m","precipitación",2.0
+"Niederschlag","Niederschläge","m","precipitación",1.0
+"Niveau","Niveaus","n","nivel, categoría",101.0
 "Nominativ","Nominative","m","nominativo",1.0
 "Nord","-","m","norte",1.0
 "Norden","-","m","norte",1.0
 "Notfall","Notfälle","m","urgencia",2.0
-"Notiz","Notizen","f","noticia, nota",83.0
+"Notiz","Notizen","f","noticia, nota",86.0
 "Notwendigkeit","-","f","necesidad",1.0
 "November","November","m","noviembre",1.0
 "Nudel","Nudeln","f","pasta, fideos",1.0
@@ -771,15 +784,15 @@
 "Postler","Postler","m","cartero",1.0
 "Privatsphäre","Privatsphären","f","privacidad",1.0
 "Problem","Probleme","n","problema",1.0
-"Produkt","Produkte","n","producto",3.0
+"Produkt","Produkte","n","producto",4.0
 "Programm","Programme","n","programa",3.0
 "Projekt","Projekte","n","proyecto",3.0
 "Pronomen","Pronomen/Pronomina","n","pronombre",1.0
 "Propeller","Propeller","m","hélice",1.0
 "Prospekt","Prospekte","mn","folleto, prospecto",1.0
 "Protokoll","Protokolle","n","protocolo, acta",1.0
-"Prototyp","Prototypen","m","prototipo",3.0
-"Prozess","Prozesse","m","proceso",3.0
+"Prototyp","Prototypen","m","prototipo",2.0
+"Prozess","Prozesse","m","proceso",2.0
 "Präsens","Präsentia/Präsenzien","n","presente (tiempo verbal)",18.0
 "Präsentation","Präsentationen","f","presentación",1.0
 "Präteritum","Präterita","n","pretérito, pasado (tiempo verbal)",1.0
@@ -822,7 +835,7 @@
 "Rippe","Rippen","f","costilla",1.0
 "Risiko","Risikos/Risiken","n","riesgo",1.0
 "Rubrik","Rubriken","f","categoría",1.0
-"Rucksack","Rucksäcke","m","mochila",7.0
+"Rucksack","Rucksäcke","m","mochila",6.0
 "Ruine","Ruinen","f","ruina",11.0
 "Räderwerk","Räderwerke","n","engranaje",1.0
 "S-Bahn","S-Bahnen","f","metro",1.0
@@ -850,7 +863,7 @@
 "Schein","Scheine","m","billete (dinero)",1.0
 "Schicksal","Schicksale","n","destino, plan, suerte",1.0
 "Schiff","Schiffe","n","barco",2.0
-"Schiffswerft","Schiffswerften","f","astillero",81.0
+"Schiffswerft","Schiffswerften","f","astillero",79.0
 "Schildkröte","Schildkröten","f","tortuga",2.0
 "Schimmel","-","m","moho",16.0
 "Schimmel","Schimmel","m","caballo blanco",1.0
@@ -878,7 +891,7 @@
 "Schrotflinte","Schrotflinten","f","escopeta",2.0
 "Schrott","-","m","chatarra",1.0
 "Schuh","Schuhe","m","zapato",1.0
-"Schuhwerk","Schuhwerke","n","calzado",4.0
+"Schuhwerk","Schuhwerke","n","calzado",6.0
 "Schulabschluss","Schulabschlüsse","m","título/diploma escolar",1.0
 "Schuld","-","f","culpa",2.0
 "Schuld","Schulden","f","deuda",2.0
@@ -927,8 +940,8 @@
 "Sphäre","Sphären","f","esfera",1.0
 "Spiegel","Spiegel","m","espejo",1.0
 "Spiel","Spiele","n","juego",2.0
-"Spieler","Spieler","m","jugador",72.0
-"Spielerin","Spielerinnen","f","jugadora",75.0
+"Spieler","Spieler","m","jugador",71.0
+"Spielerin","Spielerinnen","f","jugadora",71.0
 "Spinne","Spinnen","f","araña",1.0
 "Sport","-","m","deporte",3.0
 "Sprache","Sprachen","f","idioma",1.0
@@ -963,7 +976,7 @@
 "Stuhl","Stühle","m","silla",1.0
 "Stunde","Stunden","f","hora",2.0
 "Sturm","Stürme","m","tormenta, teporal",1.0
-"Stück","Stücke","n","pieza, trozo, pedazo",7.0
+"Stück","Stücke","n","pieza, trozo, pedazo",9.0
 "Substantiv","Substantive","n","sustantivo",3.0
 "Suche","Suchen","f","búsqueda",2.0
 "Supermarkt","Supermärkte","m","supermercado",1.0
@@ -985,6 +998,7 @@
 "Team","Teams","n","equipo",1.0
 "Tee","Tees","m","té, infusión",1.0
 "Teil","Teile","mn","pieza, parte",1.0
+"Teilband","Teilbände","m","volumen, fascículo",99.0
 "Teilnahme","-","f","participación",1.0
 "Teilnehmer","Teilnehmer","m","participante",1.0
 "Teilnehmerin","Teilnehmerinnen","f","participante",1.0
@@ -1026,12 +1040,13 @@
 "Turm","Türme","m","torre",1.0
 "Tätigkeit","Tätigkeiten","f","actividad, trabajo",1.0
 "Tüftler","Tüftler","m","persona habilidosa",1.0
-"Tür","Türen","f","puerta",1.0
+"Tür","Türen","f","puerta",3.0
 "Tüte","Tüten","f","bolsa",1.0
 "U-Bahn","U-Bahnen","f","metro",1.0
 "Uhr","Uhren","f","reloj",2.0
 "Uhrzeigersinn","-","m","sentido horario",2.0
 "Umfrage","Umfragen","f","encuesta",2.0
+"Umgang","-","m","relación, compañia, trato, manejo",102.0
 "Umstand","Umstände","m","hecho, circunstancia",1.0
 "Umwelt","-","f","entorno, medio ambiente",2.0
 "Umzug","Umzüge","m","mudanza, desfile",1.0
@@ -1065,10 +1080,10 @@
 "Verlust","Verluste","m","pérdida, daño",1.0
 "Vermögen","Vermögen","n","bienes, fortuna, patrimonio, capital, capacidad",3.0
 "Versicherung","Versicherungen","f","seguro",1.0
-"Versorgung","-","f","sustento, abastecimiento",70.0
+"Versorgung","-","f","sustento, abastecimiento",67.0
 "Versprechen","Versprechen","n","promesa",1.0
 "Verstärkung","Verstärkungen","f","refuerzo",1.0
-"Verteidigung","Verteidigungen","f","defensa",74.0
+"Verteidigung","Verteidigungen","f","defensa",72.0
 "Vertrag","Verträge","m","contrato",1.0
 "Verwaltung","Verwaltungen","f","administración",1.0
 "Verwandte","Verwandten","mf","pariente",1.0
@@ -1086,11 +1101,12 @@
 "Vorsorgeuntersuchung","Vorsorgeuntersuchungen","f","chequeo preventivo",1.0
 "Vorstellungsgespräch","Vorstellungsgespräche","n","entrevista de trabajo",2.0
 "Vorteil","Vorteile","m","ventaja",1.0
+"Vorwort","Vorworte","n","prólogo",103.0
 "Vulkan","Vulkane","m","volcán",1.0
 "Waffe","Waffen","f","arma",1.0
 "Wagen","Wagen","m","coche",2.0
 "Wahl","Wahlen","f","elección, opción",1.0
-"Wahlkreis","Wahlkreise","m","distrito electoral",1.0
+"Wahlkreis","Wahlkreise","m","distrito electoral",2.0
 "Wahrheit","Wahrheiten","f","verdad",1.0
 "Wahrscheinlichkeit","Wahrscheinlichkeiten","f","probabilidad",1.0
 "Wal","Wale","m","ballena",1.0
@@ -1103,7 +1119,7 @@
 "Wasser","Wasser","n","agua",1.0
 "Wasserfall","Wasserfälle","m","cascada, catarata",1.0
 "Wasserklosett","Wasserklosetts/Wasserklosette","n","inodoro",1.0
-"Wecker","Wecker","m","despertador",6.0
+"Wecker","Wecker","m","despertador",5.0
 "Weg","Wege","m","camino",3.0
 "Wehr","Wehre","n","dique, presa",1.0
 "Wehr","Wehren","f","defensa",2.0
@@ -1117,13 +1133,13 @@
 "Weizenbier","Weizenbiere","n","cerveza de trigo",1.0
 "Welle","Wellen","f","ola, onda",1.0
 "Welt","Welten","f","mundo",1.0
-"Werft","Werften","f","astillero, hangar",81.0
+"Werft","Werften","f","astillero, hangar",78.0
 "Werk","Werke","n","mecanismo, obra, fábrica, taller",1.0
 "Werkstatt","Werkstätten","f","taller",2.0
 "Werkzeug","Werkzeuge","n","herramienta",1.0
 "Wert","Werte","m","valor, precio",1.0
 "West","-","m","oeste",1.0
-"Weste","Westen","f","chaleco",2.0
+"Weste","Westen","f","chaleco",1.0
 "Westen","-","m","oeste",2.0
 "Wetter","-","n","tiempo (clima)",1.0
 "Wettkampf","Wettkämpfe","m","competición",1.0
@@ -1167,7 +1183,7 @@
 "Zerstörer","Zerstörer","m","destructor",1.0
 "Zerstörerin","Zerstörerinnen","f","destructora",1.0
 "Zertifikat","Zertifikate","n","certificado",2.0
-"Zeug","-","n","cosa",2.0
+"Zeug","-","n","cosa",1.0
 "Ziel","Ziele","n","destino (viaje), meta, fin, objetivo",1.0
 "Zimmer","Zimmer","n","habitación",1.0
 "Zirkel","Zirkel","m","compás",1.0
@@ -1193,20 +1209,6 @@
 "Überraschung","Überraschungen","f","sorpresa",1.0
 "Überschrift","Überschriften","f","título, encabezado",1.0
 "Übersetzung","Übersetzungen","f","traducción",1.0
-"Übersicht","Übersichten","f","resumen, vista general",80.0
+"Übersicht","Übersichten","f","resumen, vista general",79.0
 "Übung","Übungen","f","práctica, ejercicio",1.0
-"Fremdsprache","Fremdsprachen","f","lengua extranjera",100.0
-"Teilband","Teilbände","m","volumen, fascículo",98.0
-"Niveau","Niveaus","n","nivel, categoría",100.0
-"Vorwort","Vorworte","n","prólogo",101.0
-"Umgang","-","m","relación, compañia, trato, manejo",100.0
-"Gemeinsamkeit","Gemeinsamkeiten","f","característica común",99.0
-"Alltag","Alltage","m","día normal",100.0
-"Künstler","Künstler","m","artista",100.0
-"Künstlerin","Künstlerinnen","f","artista",99.0
-"Aussage","Aussagen","f","declaración",100.0
-"Frühaufsteher","Frühaufsteher","m","madrugador",100.0
-"Frühaufsteherin","Frühaufsteherinnen","f","madrugadora",99.0
-"Morgenmuffel","Morgenmuffel","m","cascarrabias mañanera",100.0
-"Kaffeebohne","Kaffeebohnen","f","grano de café",100.0
-"Bericht","Berichte","m","reportaje, informe",100.0
+"Bemühen","-","n","empeño, esfuerzo",100.0
