@@ -510,7 +510,7 @@
 "Jägerin","Jägerinnen","f","cazadora",1.0
 "Kabel","Kabel","n","cable",3.0
 "Kaffee","Kaffees","m","café",1.0
-"Kaffeebohne","Kaffeebohnen","f","grano de café",88.0
+"Kaffeebohne","Kaffeebohnen","f","grano de café",89.0
 "Kalb","Kälber","n","ternero/a",1.0
 "Kampagne","Kampagnen","f","campaña",1.0
 "Kampf","Kämpfe","m","lucha, combate",1.0
@@ -1246,3 +1246,14 @@
 "Ausstattung","Ausstattungen","f","equipamiento, equipo",99.0
 "Umsetzung","Umsetzungen","f","implementación, realización",98.0
 "Planung","Planungen","f","planificación",99.0
+"Überholen","-","n","adelantamiento",100.0
+"Fahrstuhl","Fahrstühle","m","ascensor, elevador, montacargas",100.0
+"Konsum","-","m","consumo",100.0
+"-","Folgen","p","los riesgos, los efectos",99.0
+"Folge","Folgen","f","consecuencia, repercusion, resultado, capítulo, serie, episodio",100.0
+"Druck","Drücke","m","presión",100.0
+"Symptom","Symptome","n","síntoma",100.0
+"Besuch","Besuche","m","visita",100.0
+"Kammer","Kammern","f","despensa, cámara, sala, colegio",100.0
+"Ärztekammer","Ärztekammern","f","colegio médico",100.0
+"Recherche","Recherchen","f","pesquisa, indagación",100.0
