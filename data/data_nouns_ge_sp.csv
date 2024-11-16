@@ -248,7 +248,7 @@
 "Ehe","Ehen","f","matrimonio",1.0
 "Ehefrau","Ehefrauen","f","esposa",1.0
 "Ehemann","Ehemänner","m","esposo",1.0
-"Ehre","Ehren","f","honor",79.0
+"Ehre","Ehren","f","honor",78.0
 "Ei","Eier","n","huevo",1.0
 "Eiche","Eichen","f","roble",5.0
 "Eichhörnchen","Eichhörnchen","n","ardilla",1.0
@@ -376,7 +376,7 @@
 "Füller","Füller","m","pluma, lapicera",1.0
 "Gabel","Gabeln","f","tenedor",1.0
 "Galaxie","Galaxien","f","galaxia",1.0
-"Galaxie","Galaxien","f","galaxia",76.0
+"Galaxie","Galaxien","f","galaxia",75.0
 "Gardine","Gardinen","f","cortina",1.0
 "Garten","Gärten","m","jardín",1.0
 "Gast","Gäste","m","huesped",1.0
@@ -463,7 +463,7 @@
 "Herz","Herzen","n","corazón",1.0
 "Hilfe","Hilfen","f","ayuda",1.0
 "Himmel","Himmel","m","cielo",1.0
-"Hindernis","Hindernisse","n","obstáculo",5.0
+"Hindernis","Hindernisse","n","obstáculo",6.0
 "Hintergrund","Hintergründe","m","fondo, trasfondo, causas",1.0
 "Hobby","Hobbys","n","hobby",1.0
 "Hochdeutsch","-","n","alemán estándar",1.0
@@ -693,7 +693,7 @@
 "Mond","Monde","m","luna",1.0
 "Monitor","Monitoren","m","monitor, pantalla",1.0
 "Montag","Montage","m","lunes",1.0
-"Morgenmuffel","Morgenmuffel","m","cascarrabias mañanera",92.0
+"Morgenmuffel","Morgenmuffel","m","cascarrabias mañanera",91.0
 "Moskito","Moskitos","m","mosquito",1.0
 "Motel","Motels","n","motel",1.0
 "Motor","Motoren","m","motor",1.0
@@ -729,7 +729,7 @@
 "Nichts","-","n","nada",1.0
 "Niederlassung","-","f","establecimiento",1.0
 "Niederschlag","Niederschläge","m","precipitación",1.0
-"Niveau","Niveaus","n","nivel, categoría",96.0
+"Niveau","Niveaus","n","nivel, categoría",95.0
 "Nominativ","Nominative","m","nominativo",1.0
 "Nord","-","m","norte",1.0
 "Norden","-","m","norte",1.0
@@ -1035,7 +1035,7 @@
 "Triebwerk","Triebwerke","n","motor, máquina",1.0
 "Tritt","Tritte","m","paso, puntapié, patada",1.0
 "Träne","Tränen","f","lágrima",1.0
-"Trümmerfeld","Trümmerfelder","n","campo de escombros",69.0
+"Trümmerfeld","Trümmerfelder","n","campo de escombros",68.0
 "Tuch","Tücher","n","pañuelo, trapo, capote",3.0
 "Turm","Türme","m","torre",1.0
 "Tätigkeit","Tätigkeiten","f","actividad, trabajo",1.0
@@ -1101,7 +1101,7 @@
 "Vorsorgeuntersuchung","Vorsorgeuntersuchungen","f","chequeo preventivo",1.0
 "Vorstellungsgespräch","Vorstellungsgespräche","n","entrevista de trabajo",2.0
 "Vorteil","Vorteile","m","ventaja",1.0
-"Vorwort","Vorworte","n","prólogo",102.0
+"Vorwort","Vorworte","n","prólogo",101.0
 "Vulkan","Vulkane","m","volcán",1.0
 "Waffe","Waffen","f","arma",1.0
 "Wagen","Wagen","m","coche",2.0
@@ -1211,8 +1211,8 @@
 "Übersetzung","Übersetzungen","f","traducción",1.0
 "Übersicht","Übersichten","f","resumen, vista general",75.0
 "Übung","Übungen","f","práctica, ejercicio",1.0
-"Bemühen","-","n","empeño, esfuerzo",95.0
-"Industrie","Industrien","f","industria",96.0
+"Bemühen","-","n","empeño, esfuerzo",98.0
+"Industrie","Industrien","f","industria",95.0
 "Wohlstand","-","m","bienestar, prosperidad",98.0
 "Expedition","Expeditionen","f","expedición",99.0
 "Einbürgerung","Einbürgerungen","f","nacionalización",97.0
@@ -1228,7 +1228,7 @@
 "Abkürzung","Abkürzungen","f","abreviatura, atajo",97.0
 "Merkmal","Merkmale","n","rasgo, característica",99.0
 "Leistung","Leistungen","f","pago, rendimiento, ejecución, sevicio",95.0
-"Hersteller","Hersteller","m","productor, fabricante",90.0
+"Hersteller","Hersteller","m","productor, fabricante",89.0
 "Herstellerin","Herstellerinnen","f","productora, fabricante",96.0
 "Struktur","Strukturen","f","estructura",98.0
 "Wirkung","Wirkungen","f","efecto, resultado",94.0
@@ -1247,7 +1247,7 @@
 "Umsetzung","Umsetzungen","f","implementación, realización",98.0
 "Planung","Planungen","f","planificación",99.0
 "Überholen","-","n","adelantamiento",100.0
-"Fahrstuhl","Fahrstühle","m","ascensor, elevador, montacargas",100.0
+"Fahrstuhl","Fahrstühle","m","ascensor, elevador, montacargas",99.0
 "Konsum","-","m","consumo",100.0
 "-","Folgen","p","los riesgos, los efectos",99.0
 "Folge","Folgen","f","consecuencia, repercusion, resultado, capítulo, serie, episodio",100.0
