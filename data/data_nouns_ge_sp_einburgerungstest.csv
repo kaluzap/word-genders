@@ -1,0 +1,63 @@
+"singular","plural","gender","translation","mistakes"
+"Abschluss","Abschlüsse","m","finalización",1000
+"Amt","Ämter","n","oficina publica, administración",1002
+"Anforderung","Anforderungen","f","requisito, exigencia",1000
+"Begriff","Begriffe","m","concepto, idea, noción",999
+"Behauptung","Behauptungen","f","afirmación, declaración",998
+"Behinderung","Behinderungen","f","impedimento, discapacidad",999
+"Berufswahl","-","f","elección de profesión",1000
+"Bewerber","Bewerber","m","candidato, solicitante",1000
+"Bewerberin","Bewerberinnen","f","candidata,solicitante",1000
+"Dienstleistung","Dienstleistungen","f","prestacion de servicio",1000
+"Einbürgerung","Einbürgerungen","f","nacionalización",1000
+"Einbürgerungstest","Einbürgerungstests","m","prueba de nacionalización",993
+"Einschränkung","Einschränkungen","f","limitación, restricción",999
+"Einwanderung","Einwanderungen","f","inmigración",1000
+"Faustrecht","-","n","justicia por mano propia",1002
+"Folter","Foltern","f","tortura",1000
+"Freizügigkeit","-","f","libertad de residencia, libre circulación",999
+"Gefängnis","Gefängnisse","n","cárcel, prisión",999
+"Geldstrafe","Geldstrafen","f","multa",1000
+"Gericht","Gerichte","n","corte, tribunal, platillo",1000
+"Gesellschaftsordnung","Gesellschaftsordnungen","f","orden social",1000
+"Gesetz","Gesetze","n","ley",1000
+"Gewissensfreiheit","-","f","libertad de conciencia",1000
+"Glaubensfreiheit","-","f","libertad de culto",999
+"Grundgesetz","Grundgesetze","n","ley básica, constitución",1000
+"Kenntnis","Kenntnisse","f","conocimiento, saber",100
+"Landesamt","Landesämter","n","oficina estatal",1000
+"Lebensverhältnis","Lebensverhältnisse","n","condición de vida",999
+"Meinungsfreiheit","-","f","libertad de expresión",999
+"Meinungsäußerung","Meinungsäußerungen","f","expresión, opinión",1000
+"Mensch","Menschen","m","persona",1000
+"Menschenwürde","-","f","dignidad humana",1000
+"Merkmal","Merkmale","n","caracteristica",1000
+"Militärdienst","-","m","servicio militar",1000
+"Nachweis","Nachweise","m","comprobante",1000
+"Pressefreiheit","-","f","libertad de prensa",1000
+"Prügelstrafe","Prügelstrafen","f","castigo corporal",1001
+"Rechtsgrundlage","Rechtsgrundlagen","f","fundamento legal",1000
+"Rechtsordnung","Rechtsordnungen","f","sistema legal",1000
+"Regierung","Regierungen","f","gobierno",998
+"Schutz","Schutze","m","protección",1000
+"Selbstjustiz","-","f","justicia por mano propia",999
+"Staat","Staaten","m","estado",1000
+"Staatsangehörigkeit","Staatsangehörigkeiten","f","nacionalidad",998
+"Staatsbürgerschaft","Staatsbürgerschaften","f","ciudadania",998
+"Test","Tests","m","prueba",998
+"Todesstrafe","Todesstrafen","f","pena de muerte",999
+"Unantastbarkeit","-","f","intangibilidad, inviolabilidad",1000
+"Ungleichbehandlung","Ungleichbehandlungen","f","trato desigual",999
+"Unterhaltung","Unterhaltungen","f","entretenimiento, conversación",1000
+"Unterlage","Unterlagen","f","documentos",1000
+"Verbreitung","-","f","distribución",1000
+"Verfahren","Verfahren","n","procedimiento",1001
+"Verfassung","Verfassungen","f","constitución (ley)",999
+"Verleihung","Verleihungen","f","otorgamiento",999
+"Versammlungsfreiheit","-","f","libertad de reunión",998
+"Volk","Völker","n","pueblo",1000
+"Waffenbesitz","Waffenbesitze","m","tenencia de armas",999
+"Wahlrecht","-","n","derecho a votar",999
+"Würde","Würden","f","dignidad",1000
+"Zuständigkeit","Zuständigkeiten","f","jurisdicción",997
+"Zwangsarbeit","-","f","trabajo forzado",1000
