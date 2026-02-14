@@ -37,7 +37,7 @@
 "folgend","-","-","siguiente",1
 "frei","freier","am freiesten/freisten","libre",1
 "fremd","fremder","am fremdesten","extraño, ajeno, extranjero",1
-"fröhlich","fröhlicher","am fröhlichsten","alegre",1
+"fröhlich","fröhlicher","am fröhlichsten","alegre",2
 "früh","früher","am frühesten","temprano",1
 "frühzeitig","-","-","temprano",1
 "furchtbar","furchtbarer","am furchtbarsten","terrible, horrible",3
@@ -54,7 +54,7 @@
 "glücklich","glücklicher","am glücklichsten","feliz, afortunado",1
 "grausam","grausamer","am grausamsten","cruel, brutal",1
 "groß","größer","am größten","grande",1
-"großartig","großartiger","am großartigsten","grandioso, magnífico, excelente",8
+"großartig","großartiger","am großartigsten","grandioso, magnífico, excelente",7
 "gut","besser","am besten","bueno",1
 "heimisch","heimischer","am heimischsten","familiarizado, nacional",1
 "heiter","heiterer/heitrer","am heitersten","alegre, divertido",1
@@ -131,11 +131,11 @@
 "weit","weiter","am weitesten","extenso, ancho, lejano",1
 "wenig","weniger","am wenigsten","poco",1
 "wichtig","wichtiger","am wichtigsten","importante",1
-"ziemlich","ziemlicher","am ziemlichsten","bastante, considerable",1
+"ziemlich","ziemlicher","am ziemlichsten","bastante, considerable",2
 "zufrieden","zufriedener","am zufriedensten","contento, satisfecho",1
-"schlau","schlauer","am schlauesten","astuto, listo",100
+"schlau","schlauer","am schlauesten","astuto, listo",99
 "bekannt","bekannter","am bekanntesten","conocido",100
-"mental","-","-","mental",100
-"verpflichtet","-","-","obligado",100
-"dringend","dringender","am dringendsten","urgente, apremiante, enérgico",100
-"vorsichtig","vorsichtiger","am vorsichtigsten","prudente, cuidadoso",100
+"mental","-","-","mental",98
+"verpflichtet","-","-","obligado",99
+"dringend","dringender","am dringendsten","urgente, apremiante, enérgico",102
+"vorsichtig","vorsichtiger","am vorsichtigsten","prudente, cuidadoso",99

@@ -56,7 +56,7 @@
 "aufnehmen in","hat aufgenommen","ingresar en, admitir en",1
 "aufnehmen von","hat aufgenommen","recoger de",1
 "aufnehmen","hat aufgenommen","comenzar, retomar, asimilar, pedir",1
-"aufpassen auf","hat aufgepasst","cuidado a, prestar atención a",100
+"aufpassen auf","hat aufgepasst","cuidado a, prestar atención a",101
 "aufpassen","hat aufgepasst","tener cuidado, prestar atención",98
 "aufregen","hat aufgeregt","alterar, excitar, irritar, exaltar",101
 "aufräumen","hat aufgeräumt","ordenar, arreglar",1
@@ -130,7 +130,7 @@
 "betragen","hat betragen","ascender a, elevarse a",7
 "betrügen","hat betrogen","engañar",7
 "bewegen zu","hat bewogen","inducir a, mover a",12
-"bewegen","hat bewogen","mover, ponerse en marcha, commover, emocionar",11
+"bewegen","hat bewogen","mover, ponerse en marcha, commover, emocionar",10
 "beweisen","hat bewiesen","probar, demostrar",11
 "bewerben","hat beworben","publicitar, promocionar",15
 "biegen","hat/ist gebogen","girar, torcer, doblar, declinar",12
@@ -326,7 +326,7 @@
 "sich bedanken","hat bedankt","dar las gracias",99
 "sich befinden","hat befunden","encontrarse, estar",1
 "sich beißen","hat gebissen","desentonar, no armonizar",9
-"sich bemühen um","hat bemüht","esforzarse por, esmerarse por",99
+"sich bemühen um","hat bemüht","esforzarse por, esmerarse por",98
 "sich beraten mit","hat beraten","asesorarse con, consultarse con",1
 "sich beruhigen","hat beruhigt","tranquilizarse, calmarse",1
 "sich beschäftigen mit","hat beschäftigt","ocuparse de, dedicarse a",100
@@ -354,7 +354,7 @@
 "sprechen","hat gesprochen","hablar",7
 "sprießen","ist gesprossen","brotar",10
 "springen","ist gesprungen","saltar",7
-"stechen","hat gestochen","picar, pinchar",14
+"stechen","hat gestochen","picar, pinchar",13
 "stehen","hat gestanden","estar de pie",9
 "stehlen","hat gestohlen","robar",9
 "steigen","ist gestiegen","escalar, subir",10
@@ -421,13 +421,13 @@
 "zurücktreten","ist zurückgetreten","retroceder, disminuir",1
 "zusammenhängen mit","hat zusammengehängt","tener relación con",1
 "zusammenhängen","hat zusammengehängt","estar unido, estar conectado, estar relacionado",1
-"zuschießen auf","hat zugeschossen","abalanzarse sobre, precipitarse",11
+"zuschießen auf","hat zugeschossen","abalanzarse sobre, precipitarse",12
 "zuschießen","hat zugeschossen","tirar, lanzar, contribuir con",10
 "zwingen zu","hat gezwungen","obligar a",11
 "ächten","hat geächtet","proscribir, desterrar, apartar, aislar",11
 "ärgern","hat geärgert","fastidiar, molestar",97
 "strukturieren","hat strukturiert","estructurar",95
-"passen","hat gepasst","encajar, pegar, convenir, venir bien",95
+"passen","hat gepasst","encajar, pegar, convenir, venir bien",94
 "erstellen","hat erstellt","edificar, contruir, elaborar, crear",99
 "verpflichten","hat verpflichtet","obligar, comprometer",99
 "verpflichten für","hat verpflichtet","fichar por",99
@@ -438,7 +438,7 @@
 "verteilen","hat verteilt","asignar",100
 "verteilen unter/an","hat verteilt","repartir entre, distribuir entre",97
 "verteilen auf","hat verteilt","repartir entre",98
-"sich verteilen","hat verteilt","extenderse, distribuirse",100
+"sich verteilen","hat verteilt","extenderse, distribuirse",101
 "verwenden","hat verwendet / verwandt","aplicar algo",100
 "informieren","hat informiert","informar",100
 "informieren über","hat informiert","informar sobre/de",100
@@ -449,7 +449,7 @@
 "vereinbaren","hat vereinbart","conectar, acordar, fijar, aunar, conciliar",100
 "besprechen","hat besprochen","hablar de, discutir, reseñar",100
 "holen","hat geholt","traer, recoger, llamar, buscar, conseguir",100
-"einholen","hat eingeholt","alcanzar, recuperar, recoger, arriar",100
+"einholen","hat eingeholt","alcanzar, recuperar, recoger, arriar",101
 "überholen"," hat überholt","adelantar, aventajar, superar, revisar",100
 "aufholen","hat aufgeholt","ganar terreno, recuperar, levar",100
 "nachholen","hat nachgeholt","hacer venir, buscar más tarde, recuperar",100
