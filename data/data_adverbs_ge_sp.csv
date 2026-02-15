@@ -1,16 +1,16 @@
 "adverb","translation","mistakes"
-"ab und zu","en ocasiones",11
+"ab und zu","en ocasiones",10
 "abends","por las tardes",10
 "abwärts","hacia abajo",10
 "allerdings","sin embargo",11
-"am ehesten","lo más pronto",8
+"am ehesten","lo más pronto",7
 "am häufigsten","lo más frecuente",11
 "am liebsten","lo más preferible",11
 "am wohlsten","lo mejor",11
 "ansonsten","por lo demás",11
 "auch","también",11
 "auch","también",11
-"aufwärts","hacia arriba",11
+"aufwärts","hacia arriba",10
 "außen","fuera",10
 "außerdem","además",11
 "außerdem","además",11
@@ -35,24 +35,24 @@
 "dort","allí",10
 "drittens","en tercer lugar",10
 "ebenfalls","también",11
-"eher","más pronto",11
+"eher","más pronto",12
 "erstens","en primer lugar",10
-"falls","caso que",11
+"falls","caso que",10
 "fast immer","casi siempre",9
 "fast nie","casi nunca",10
 "folglich","por lo tanto",11
-"freitags","los viernes",10
+"freitags","los viernes",9
 "früher","antes",11
 "gern","gustosamente",11
 "gestern","ayer",11
 "gleich","inmediatamente",11
 "gleichfalls","igualmente",11
-"heimwärts","hacia casa",11
+"heimwärts","hacia casa",14
 "heute","hoy",10
 "hier","aquí",11
 "hingegen","por el contrario",11
 "hinten","detrás",10
-"häufig","frecuentemente",11
+"häufig","frecuentemente",16
 "immer","siempre",10
 "innen","dentro",10
 "jetzt","ahora",11
@@ -61,7 +61,7 @@
 "lieber","preferiblemente",10
 "links","a la izquierda",11
 "manchmal","a veces",10
-"meistens","la mayoría de las veces",11
+"meistens","la mayoría de las veces",10
 "mittwochs","los miércoles",10
 "monatlich","mensualmente",11
 "montags","los lunes",10
@@ -72,9 +72,9 @@
 "nie","nunca",10
 "nirgends","en ningún sitio",11
 "nur","solamente",11
-"nur","solo",11
+"nur","solo",10
 "oben","arriba",11
-"oft","frecuente",10
+"oft","frecuente",9
 "oft","frecuentemente",11
 "rechts","a la derecha",10
 "rückwärts","hacia atrás",11
@@ -103,7 +103,7 @@
 "wie teuer","qué caro",10
 "wie viel","cuánto",10
 "wie weit","qué tan lejos",11
-"wie","cómo",11
+"wie","cómo",10
 "wieso","cómo",10
 "wo","dónde",10
 "woher","de dónde",11
@@ -115,10 +115,10 @@
 "zweitens","en segundo lugar",11
 "öfter","más frecuente",11
 "überall","en todas partes",11
-"übermorgen","pasado mañana",11
+"übermorgen","pasado mañana",10
 "ungefähr","aproximadamente, más o menos",11
 "von ungefähr","por casualidad",11
-"tagsüber","durante el día, de día",100
+"tagsüber","durante el día, de día",97
 "dringend","urgentemente, desesperadamente",100
 "höflich","cortésmente",100
-"vorsichtig","con cuidado",100
+"vorsichtig","con cuidado",97

@@ -26,6 +26,7 @@ class NounsFrame(Frame):
         master.wm_title("Noun genders")
         master.geometry("550x550")
         master.resizable(False, False)
+        self.master.protocol("WM_DELETE_WINDOW", self.return_to_main_page)
 
         # state variables
         self.active_word = ""
@@ -39,6 +40,7 @@ class NounsFrame(Frame):
         self.allow_repetitions.set(1)
         self.my_success = util.SuccessStreak()
         self.create_figure()
+
         # starting a word
         self.set_new_active_word_and_case()
 
