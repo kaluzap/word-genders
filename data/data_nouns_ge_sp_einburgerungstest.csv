@@ -2,40 +2,40 @@
 "-","Vereinten Nationen","p","Naciones Unidas (ONU)",995
 "Abkürzung","Abkürzungen","f","abreviatura / atajo",999
 "Abschluss","Abschlüsse","m","finalización",999
-"Abschottung","Abschottungen","f","aislamiento / sellado",998
+"Abschottung","Abschottungen","f","aislamiento / sellado",997
 "Abstimmung","Abstimmungen","f","votación / coordinación",1000
-"Alliierte","Alliierten","m","aliado",1000
+"Alliierte","Alliierten","m","aliado",1002
 "Amt","Ämter","n","oficina publica, administración",1001
-"Anforderung","Anforderungen","f","requisito, exigencia",999
+"Anforderung","Anforderungen","f","requisito, exigencia",996
+"Angebot","Angebote","n","oferta",998
 "Angebot","Angebote","n","oferta",999
-"Angebot","Angebote","n","oferta",1000
-"Angst","Ängste","f","miedo / temor",1000
-"Anhänger","Anhänger","m","seguidor / partidario / remolque",999
+"Angst","Ängste","f","miedo / temor",999
+"Anhänger","Anhänger","m","seguidor / partidario / remolque",998
 "Antwort","Antworten","f","respuesta",1000
 "Arbeiteraufstand","Arbeiteraufstände","m","levantamiento obrero",999
 "Aufstand","Aufstände","m","sublevación / levantamiento",997
-"Ausgleich","Ausgleiche","m","equilibrio / compensación",1000
+"Ausgleich","Ausgleiche","m","equilibrio / compensación",999
 "Ausland","-","n","extranjero (el exterior)",998
-"Begriff","Begriffe","m","concepto, idea, noción",998
+"Begriff","Begriffe","m","concepto, idea, noción",997
 "Behauptung","Behauptungen","f","afirmación, declaración",997
 "Behinderung","Behinderungen","f","impedimento, discapacidad",999
 "Berufswahl","-","f","elección de profesión",1000
-"Besatzungszone","Besatzungszonen","f","zona de ocupación",999
+"Besatzungszone","Besatzungszonen","f","zona de ocupación",998
 "Beschluss","Beschlüsse","m","decisión / acuerdo / decreto",1000
 "Bevölkerung","Bevölkerungen","f","población",1000
-"Bewerber","Bewerber","m","candidato, solicitante",999
+"Bewerber","Bewerber","m","candidato, solicitante",998
 "Bewerberin","Bewerberinnen","f","candidata,solicitante",999
 "Bundesland","Bundesländer","n","estado federado",999
 "Bundesregierung","Bundesregierungen","f","gobierno federal",999
-"Bundesrepublik","Bundesrepubliken","f","República Federal",1000
+"Bundesrepublik","Bundesrepubliken","f","República Federal",999
 "DDR","-","f","RDA (República Democrática Alemana)",998
 "Demokratie","Demokratien","f","democracia",999
 "Demut","-","f","humildad",999
 "Deutschland","-","n","Alemania",1000
-"Dienstleistung","Dienstleistungen","f","prestacion de servicio",999
-"Diktatur","Diktaturen","f","dictadura",999
+"Dienstleistung","Dienstleistungen","f","prestacion de servicio",998
+"Diktatur","Diktaturen","f","dictadura",998
 "Einbürgerung","Einbürgerungen","f","nacionalización",999
-"Einbürgerungstest","Einbürgerungstests","m","prueba de nacionalización",993
+"Einbürgerungstest","Einbürgerungstests","m","prueba de nacionalización",994
 "Einheit","Einheiten","f","unidad",999
 "Einschränkung","Einschränkungen","f","limitación, restricción",998
 "Einwanderung","Einwanderungen","f","inmigración",998
@@ -43,21 +43,21 @@
 "Entfaltung","Entfaltungen","f","desarrollo / despliegue",999
 "Faustrecht","-","n","justicia por mano propia",1002
 "Feiertag","Feiertage","m","día festivo",999
-"Flugzeug","Flugzeuge","n","avión",1000
+"Flugzeug","Flugzeuge","n","avión",999
 "Folter","Foltern","f","tortura",999
 "Freizügigkeit","-","f","libertad de residencia, libre circulación",999
-"Gebet","Gebete","n","oración / rezo",999
-"Gebiet","Gebiete","n","territorio / zona / área",1000
+"Gebet","Gebete","n","oración / rezo",998
+"Gebiet","Gebiete","n","territorio / zona / área",1002
 "Gefängnis","Gefängnisse","n","cárcel, prisión",999
 "Geheimdienst","Geheimdienste","m","servicio secreto / de inteligencia",1001
 "Geldstrafe","Geldstrafen","f","multa",999
-"Gemeinderat","Gemeinderäte","m","consejo municipal",1002
+"Gemeinderat","Gemeinderäte","m","consejo municipal",1001
 "Gericht","Gerichte","n","corte, tribunal, platillo",999
-"Gerichtsschöffe","Gerichtsschöffen","m","juez lego (no oficial)",1001
+"Gerichtsschöffe","Gerichtsschöffen","m","juez lego (no oficial)",1000
 "Gesellschaftsordnung","Gesellschaftsordnungen","f","orden social",997
 "Gesetz","Gesetze","n","ley",1000
 "Gewissensfreiheit","-","f","libertad de conciencia",998
-"Glaubensfreiheit","-","f","libertad de culto",997
+"Glaubensfreiheit","-","f","libertad de culto",996
 "Grab","Gräber","n","tumba / sepultura",998
 "Grundgesetz","Grundgesetze","n","ley básica, constitución",1000
 "Grundlage","Grundlagen","f","base / fundamento",999
@@ -65,92 +65,102 @@
 "Jude","Juden","m","judío",999
 "Jura","-","n","Derecho (estudios / leyes)",100
 "Kapitalismus","-","m","capitalismo",999
-"Kapitulation","Kapitulationen","f","capitulación / rendición",1000
+"Kapitulation","Kapitulationen","f","capitulación / rendición",999
 "Kenntnis","Kenntnisse","f","conocimiento, saber",100
 "Landesamt","Landesämter","n","oficina estatal",999
 "Landtransport","Landtransporte","m","transporte terrestre",1000
 "Landweg","Landwege","m","vía terrestre",998
-"Lebensverhältnis","Lebensverhältnisse","n","condición de vida",999
+"Lebensverhältnis","Lebensverhältnisse","n","condición de vida",998
 "Luftbrücke","Luftbrücken","f","puente aéreo",1000
 "Macht","Mächte","f","poder / fuerza / potencia",1002
-"Marktwirtschaft","Marktwirtschaften","f","economía de mercado",1000
+"Marktwirtschaft","Marktwirtschaften","f","economía de mercado",999
 "Marktwirtschaft","Marktwirtschaften","f","economía de mercado",999
 "Mauerfall","-","m","caída del muro",1000
 "Meinungsfreiheit","-","f","libertad de expresión",999
-"Meinungsäußerung","Meinungsäußerungen","f","expresión, opinión",1000
+"Meinungsäußerung","Meinungsäußerungen","f","expresión, opinión",999
 "Mensch","Menschen","m","persona",999
 "Menschenwürde","-","f","dignidad humana",998
 "Merkmal","Merkmale","n","caracteristica",1000
-"Militärdienst","-","m","servicio militar",1000
+"Militärdienst","-","m","servicio militar",1001
 "Ministerium","Ministerien","n","ministerio",1000
 "Mitglied","Mitglieder","n","miembro",1002
 "Monarchie","Monarchien","f","monarquía",1000
-"Musiker","Musiker","m","músico",999
+"Musiker","Musiker","m","músico",997
 "Nachfrage","Nachfragen","f","demanda",998
 "Nachfrage","Nachfragen","f","demanda",1000
-"Nachweis","Nachweise","m","comprobante",1000
+"Nachweis","Nachweise","m","comprobante",999
 "Nationalsozialismus","-","m","nacionalsocialismo",999
 "Pakt","Pakte / Pakte","m","pacto",997
 "Parlament","Parlamente","n","parlamento",1000
-"Partei","Parteien","f","partido político",1000
+"Partei","Parteien","f","partido político",999
 "Person","Personen","f","persona",998
 "Planwirtschaft","Planwirtschaften","f","economía planificada",1000
 "Politiker","Politiker","m","político (hombre)",997
 "Politikerin","Politikerinnen","f","política (mujer)",999
-"Pressefreiheit","-","f","libertad de prensa",1000
+"Pressefreiheit","-","f","libertad de prensa",999
 "Pressezensur","Pressezensuren","f","censura de prensa",998
 "Prügelstrafe","Prügelstrafen","f","castigo corporal",1000
 "Rechtsgrundlage","Rechtsgrundlagen","f","fundamento legal",999
-"Rechtsordnung","Rechtsordnungen","f","sistema legal",998
-"Regierung","Regierungen","f","gobierno",998
-"Resolution","Resolutionen","f","resolución",999
+"Rechtsordnung","Rechtsordnungen","f","sistema legal",997
+"Regierung","Regierungen","f","gobierno",996
+"Resolution","Resolutionen","f","resolución",1001
 "Revolution","Revolutionen","f","revolución",1001
-"Richter","Richter","m","juez",1000
-"Räterepublik","Räterepubliken","f","república soviética / de consejos",1000
-"Rückzug","Rückzüge","m","retirada",999
-"Schutz","Schutze","m","protección",998
-"Schöffe","Schöffen","m","juez",1000
+"Richter","Richter","m","juez",997
+"Räterepublik","Räterepubliken","f","república soviética / de consejos",1002
+"Rückzug","Rückzüge","m","retirada",998
+"Schutz","Schutze","m","protección",997
+"Schöffe","Schöffen","m","juez",999
 "Selbstjustiz","-","f","justicia por mano propia",1001
 "Soldat","Soldaten","m","soldado",997
 "Sowjetunion","-","f","Unión Soviética",999
 "Sportverein","Sportvereine","m","club deportivo",999
-"Staat","Staaten","m","estado",1001
-"Staat","Staaten","m","estado",1000
-"Staatsangehörigkeit","Staatsangehörigkeiten","f","nacionalidad",997
+"Staat","Staaten","m","estado",1002
+"Staat","Staaten","m","estado",999
+"Staatsangehörigkeit","Staatsangehörigkeiten","f","nacionalidad",996
 "Staatsbürgerschaft","Staatsbürgerschaften","f","ciudadania",996
-"Staatssicherheit","-","f","seguridad del estado (Stasi)",999
-"Stadtoberhaupt","Stadtoberhäupter","n","jefe de la ciudad",1002
+"Staatssicherheit","-","f","seguridad del estado (Stasi)",998
+"Stadtoberhaupt","Stadtoberhäupter","n","jefe de la ciudad",1001
 "Stellvertreter","Stellvertreter","m","suplente, representante",999
 "Stellvertreterin","Stellvertreterinnen","f","suplente, representante",998
 "Stolperstein","Stolpersteine","m","piedra de la memoria (lit. piedra de tropiezo)",998
 "Test","Tests","m","prueba",997
 "Tod","Tode","m","muerte",1000
-"Todesstrafe","Todesstrafen","f","pena de muerte",996
+"Todesstrafe","Todesstrafen","f","pena de muerte",994
 "Unantastbarkeit","-","f","intangibilidad, inviolabilidad",998
 "Ungleichbehandlung","Ungleichbehandlungen","f","trato desigual",999
 "Unterhaltung","Unterhaltungen","f","entretenimiento, conversación",1000
 "Unterlage","Unterlagen","f","documentos",999
-"Verbot","Verbote","n","prohibición",1002
+"Verbot","Verbote","n","prohibición",1001
 "Verbreitung","-","f","distribución",1000
-"Verfahren","Verfahren","n","procedimiento",1001
-"Verfassung","Verfassungen","f","constitución (ley)",998
+"Verfahren","Verfahren","n","procedimiento",1000
+"Verfassung","Verfassungen","f","constitución (ley)",997
 "Verfolgung","Verfolgungen","f","persecución",1000
 "Vergebung","-","f","perdón / remisión",1000
 "Verkehr","-","m","tráfico / transporte",1000
 "Verkehrstote","Verkehrstoten","mf","víctima mortal de tráfico",997
-"Verleihung","Verleihungen","f","otorgamiento",999
-"Versammlungsfreiheit","-","f","libertad de reunión",996
-"Versorgung","Versorgungen","f","suministro / abastecimiento",999
+"Verleihung","Verleihungen","f","otorgamiento",998
+"Versammlungsfreiheit","-","f","libertad de reunión",995
+"Versorgung","Versorgungen","f","suministro / abastecimiento",998
 "Volk","Völker","n","pueblo",999
 "Volksbildung","-","f","educación pública / popular",998
-"Vorschlag","Vorschläge","m","propuesta / sugerencia",999
-"Waffenbesitz","Waffenbesitze","m","tenencia de armas",998
+"Vorschlag","Vorschläge","m","propuesta / sugerencia",997
+"Waffenbesitz","Waffenbesitze","m","tenencia de armas",997
 "Wahl","Wahlen","f","elección / votación",998
 "Wahlrecht","-","n","derecho a votar",1000
-"Wiedervereinigung","-","f","reunificación",1000
+"Wiedervereinigung","-","f","reunificación",999
 "Wirtschaftswunder","Wirtschaftswunder","n","milagro económico",1000
-"Würde","Würden","f","dignidad",999
-"Zionistenkongress","Zionistenkongresse","m","congreso sionista",1000
+"Würde","Würden","f","dignidad",998
+"Zionistenkongress","Zionistenkongresse","m","congreso sionista",999
 "Zuständigkeit","Zuständigkeiten","f","jurisdicción",996
-"Zwangsarbeit","-","f","trabajo forzado",998
+"Zwangsarbeit","-","f","trabajo forzado",997
 "Überfall","Überfälle","m","asalto / ataque / incursión",1000
+"Pfingsten","-","n","Pentecostés",1000
+"Organisation","Organisationen","f","organización",1002
+"Firma","Firmen","f","empresa, firma",1000
+"Arbeitnehmer","Arbeitnehmer","m","empleado, trabajador",1000
+"Arbeitgeber","Arbeitgeber","m","empleador, patrón",1000
+"Ehescheidung","Ehescheidungen","f","divorcio",1000
+"Brauch","Bräuche","m","costumbre, tradición",1000
+"Weihnachten","-","n","Navidad",1000
+"Rechnung","Rechnungen","f","factura, cuenta",1000
+"Behörde","Behörden","f","autoridad, organismo oficial",1000
