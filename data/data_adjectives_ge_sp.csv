@@ -4,7 +4,7 @@
 "allgemein","allgemeiner","am allgemeinsten","general, universal, común",1
 "alt","älter","am ältesten","viejo, grande (edad)",1
 "anstrengend","anstrengender","am anstrengendsten","cansador, agotador, duro",1
-"anwesend","-","-","presente, asistente",2
+"anwesend","-","-","presente, asistente",3
 "arm","ärmer","am ärmsten","pobre",1
 "artig","artiger","am artigsten","bueno, obediente",20
 "behindert","behinderter","am behindertsten","minusválido, discapacitado, impedido",1
@@ -133,9 +133,9 @@
 "wichtig","wichtiger","am wichtigsten","importante",1
 "ziemlich","ziemlicher","am ziemlichsten","bastante, considerable",2
 "zufrieden","zufriedener","am zufriedensten","contento, satisfecho",1
-"schlau","schlauer","am schlauesten","astuto, listo",99
-"bekannt","bekannter","am bekanntesten","conocido",100
-"mental","-","-","mental",98
-"verpflichtet","-","-","obligado",99
-"dringend","dringender","am dringendsten","urgente, apremiante, enérgico",102
-"vorsichtig","vorsichtiger","am vorsichtigsten","prudente, cuidadoso",99
+"schlau","schlauer","am schlauesten","astuto, listo",97
+"bekannt","bekannter","am bekanntesten","conocido",96
+"mental","-","-","mental",95
+"verpflichtet","-","-","obligado",98
+"dringend","dringender","am dringendsten","urgente, apremiante, enérgico",97
+"vorsichtig","vorsichtiger","am vorsichtigsten","prudente, cuidadoso",94

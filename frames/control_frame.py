@@ -26,7 +26,7 @@ class ControlFrame(tk.Frame):
         super().__init__(master)
         self.master = master
         master.wm_title("Word genders")
-        master.geometry("300x500")
+        master.geometry("300x550")
         master.resizable(False, False)
         master.protocol("WM_DELETE_WINDOW", master.close_window)
 
@@ -111,7 +111,7 @@ class ControlFrame(tk.Frame):
             self.frame_tools,
             width=15,
             text="Meanings",
-            command=lambda: master.switch_frame("nouns"),
+            command=lambda: master.switch_frame("meanings"),
         ).pack(padx=5, pady=5)
         tk.Button(
             self.frame_tools,

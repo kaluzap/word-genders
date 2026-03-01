@@ -7,7 +7,7 @@ class ManageWordsFrame(tk.Frame):
         super().__init__(master)
         self.master = master
         master.wm_title("Manage words")
-        master.geometry("500x330")
+        master.geometry("500x400")
         master.resizable(False, False)
         master.protocol("WM_DELETE_WINDOW", self.return_to_main_page)
 

@@ -356,6 +356,7 @@ class Window(Frame):
         if self.test_word(button_n):
             self.my_success.add_new_sucess()
             if not self.already_tested:
+                self.count_good += 1
                 df_dictionary.at[self.active_word["index"], "mistakes"] -= 1
                 if df_dictionary.at[self.active_word["index"], "mistakes"] < 1:
                     df_dictionary.at[self.active_word["index"], "mistakes"] = 1
