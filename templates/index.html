@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Genders Web</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            --primary: #4a90e2;
+            --secondary: #f5f7fa;
+            --text: #333;
+            --success: #2ecc71;
+            --error: #e74c3c;
+            --masculine: #3498db;
+            --feminine: #e91e63;
+            --neuter: #95a5a6;
+            --plural: #f39c12;
+            --bg: #ffffff;
+            --shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--secondary);
+            color: var(--text);
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: var(--primary);
+            color: white;
+            width: 100%;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: var(--shadow);
+            margin-bottom: 2rem;
+        }
+
+        .container {
+            width: 95%;
+            max-width: 700px;
+            background: var(--bg);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            margin-bottom: 2rem;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            border-bottom: 2px solid var(--secondary);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        select, button {
+            width: 100%;
+            padding: 0.8rem;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            font-size: 1rem;
+        }
+
+        button {
+            cursor: pointer;
+            transition: all 0.2s;
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            font-weight: bold;
+        }
+
+        button:hover {
+            opacity: 0.9;
+            transform: translateY(-1px);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+
+        .quiz-card {
+            text-align: center;
+            padding: 2rem;
+            border: 2px solid var(--secondary);
+            border-radius: 12px;
+            background: #fafafa;
+        }
+
+        #word-display {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        #translation-display {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 2rem;
+            min-height: 1.2rem;
+        }
+
+        .gender-buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .meaning-buttons {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .meaning-buttons button {
+            background-color: #ecf0f1;
+            color: var(--text);
+            border: 1px solid #bdc3c7;
+            text-align: center;
+            padding: 1rem;
+            height: auto;
+            white-space: normal;
+        }
+
+        .meaning-buttons button:hover {
+            background-color: #dfe6e9;
+        }
+
+        .btn-m { background-color: var(--masculine); }
+        .btn-f { background-color: var(--feminine); }
+        .btn-n { background-color: var(--neuter); }
+        .btn-p { background-color: var(--plural); }
+
+        .result-container {
+            margin: 1.5rem 0 2rem 0; /* Extra gap at bottom */
+            padding: 1.2rem;
+            border-radius: 12px;
+            min-height: 5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            transition: all 0.3s ease;
+            opacity: 0; /* Start invisible */
+        }
+        
+        .result-container.visible {
+            opacity: 1;
+        }
+
+        .result-container.correct {
+            background-color: var(--success);
+            color: white;
+            box-shadow: 0 4px 15px rgba(46, 204, 113, 0.3);
+        }
+
+        .result-container.wrong {
+            background-color: var(--error);
+            color: white;
+            box-shadow: 0 4px 15px rgba(231, 76, 60, 0.3);
+        }
+
+        #feedback {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 0.3rem;
+        }
+
+        #full-data {
+            font-size: 1.1rem;
+            font-weight: normal;
+        }
+
+        .hidden { display: none; }
+
+        .success-streak-badge {
+            display: inline-block;
+            background: #ffd700;
+            color: #000;
+            padding: 0.2rem 0.6rem;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-top: 0.5rem;
+        }
+
+        .mode-toggle {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .mode-toggle button {
+            background-color: #eee;
+            color: #555;
+            flex: 1;
+        }
+
+        .mode-toggle button.active {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .controls {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .controls button {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Word Genders</h1>
+</header>
+
+<div class="container">
+    <!-- Configuration Section -->
+    <div id="setup-section" class="section">
+        <h2>Configuration</h2>
+        <div class="form-group">
+            <label for="language-select">Training Language</label>
+            <select id="language-select">
+                <option value="de">German</option>
+                <option value="ru">Russian</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="dict-select">Dictionary</label>
+            <select id="dict-select">
+                <option value="">Select a dictionary...</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Mode</label>
+            <div class="mode-toggle">
+                <button id="mode-genders-btn" class="active" onclick="setMode('genders')">Genders</button>
+                <button id="mode-meanings-btn" onclick="setMode('meanings')">Meanings</button>
+            </div>
+        </div>
+        <button id="start-btn">Start Training</button>
+    </div>
+
+    <!-- Quiz Section -->
+    <div id="quiz-section" class="section hidden">
+        <div class="quiz-card">
+            <div id="word-display">Word</div>
+            <div id="translation-display">(translation)</div>
+
+            <div id="result-box" class="result-container">
+                <div id="feedback"></div>
+                <div id="full-data"></div>
+            </div>
+
+            <!-- Genders Mode UI -->
+            <div id="genders-ui" class="gender-buttons">
+                <button class="btn-m" onclick="submitGenderGuess('m')">Masculine</button>
+                <button class="btn-f" onclick="submitGenderGuess('f')">Feminine</button>
+                <button class="btn-n" onclick="submitGenderGuess('n')">Neuter</button>
+                <button class="btn-p" onclick="submitGenderGuess('p')">Plural</button>
+            </div>
+
+            <!-- Meanings Mode UI -->
+            <div id="meanings-ui" class="meaning-buttons hidden">
+                <button onclick="submitMeaningGuess(0)"></button>
+                <button onclick="submitMeaningGuess(1)"></button>
+                <button onclick="submitMeaningGuess(2)"></button>
+                <button onclick="submitMeaningGuess(3)"></button>
+            </div>
+
+            <div class="controls">
+                <button id="speak-btn" style="background-color: #7f8c8d;">Speak</button>
+                <button id="next-btn" disabled>Next Word</button>
+            </div>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-item">Success Rate: <span id="stat-success">0/0 (0%)</span></div>
+            <div class="stat-item">Attempts Rate: <span id="stat-attempts">0/0 (0%)</span></div>
+            <div class="stat-item">Streak: <span id="stat-streak">0</span></div>
+            <div class="stat-item">Record: <span id="stat-record">0</span></div>
+        </div>
+
+        <div style="text-align: center; margin-top: 1rem;">
+            <canvas id="streak-chart" style="max-height: 250px;"></canvas>
+        </div>
+
+        <div style="margin-top: 2rem; display: flex; gap: 0.5rem;">
+            <button onclick="saveProgress()" style="font-size: 0.8rem; padding: 0.5rem; background-color: #27ae60;">Save</button>
+            <button onclick="resetActive()" style="font-size: 0.8rem; padding: 0.5rem; background-color: #e67e22;">Reset Words</button>
+            <button onclick="backToSetup()" style="font-size: 0.8rem; padding: 0.5rem; background-color: #95a5a6;">Setup</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    let currentConfig = null;
+    let currentWordData = null;
+    let currentMode = 'genders';
+    let textToSpeak = '';
+    let streakChart = null;
+
+    async function init() {
+        const lang = document.getElementById('language-select').value;
+        await loadConfig(lang);
+        await loadDictionaries();
+    }
+
+    function setMode(mode) {
+        currentMode = mode;
+        document.getElementById('mode-genders-btn').classList.toggle('active', mode === 'genders');
+        document.getElementById('mode-meanings-btn').classList.toggle('active', mode === 'meanings');
+    }
+
+    async function loadConfig(lang) {
+        const res = await fetch(`/api/config?lang=${lang}`);
+        const data = await res.json();
+        currentConfig = data;
+        updateUIWithConfig();
+    }
+
+    function updateUIWithConfig() {
+        const dict = currentConfig.sys_dict;
+        if (!dict) return;
+        
+        document.querySelector('.btn-m').textContent = dict.article_texts.m;
+        document.querySelector('.btn-f').textContent = dict.article_texts.f;
+        document.querySelector('.btn-n').textContent = dict.article_texts.n;
+        document.querySelector('.btn-p').textContent = dict.article_texts.p;
+    }
+
+    async function loadDictionaries() {
+        const res = await fetch('/api/dictionaries');
+        const dicts = await res.json();
+        const select = document.getElementById('dict-select');
+        select.innerHTML = '<option value="">Select a dictionary...</option>';
+        dicts.forEach(d => {
+            const opt = document.createElement('option');
+            opt.value = d;
+            opt.textContent = d;
+            select.appendChild(opt);
+        });
+    }
+
+    document.getElementById('language-select').onchange = (e) => loadConfig(e.target.value);
+
+    document.getElementById('start-btn').onclick = async () => {
+        const dictName = document.getElementById('dict-select').value;
+        if (!dictName) {
+            alert('Please select a dictionary');
+            return;
+        }
+
+        const res = await fetch('/api/load_dictionary', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({name: dictName})
+        });
+
+        if (res.ok) {
+            const dictInfo = await res.json();
+            currentConfig.kind = dictInfo.kind;
+            // Validate mode
+            if (currentMode === 'genders' && dictInfo.kind !== 'nouns') {
+                alert(`The dictionary ${dictName} is not for nouns. Please use Meanings mode or select a nouns dictionary.`);
+                return;
+            }
+
+            document.getElementById('setup-section').classList.add('hidden');
+            document.getElementById('quiz-section').classList.remove('hidden');
+            
+            // Show appropriate UI
+            document.getElementById('genders-ui').classList.toggle('hidden', currentMode !== 'genders');
+            document.getElementById('meanings-ui').classList.toggle('hidden', currentMode !== 'meanings');
+            
+            nextWord();
+        }
+    };
+
+    async function nextWord() {
+        const endpoint = currentMode === 'genders' ? '/api/next_word' : '/api/next_meaning';
+        const res = await fetch(endpoint);
+        
+        if (res.ok) {
+            const data = await res.json();
+            currentWordData = data;
+            textToSpeak = data.word;
+            
+            document.getElementById('word-display').textContent = data.word;
+            document.getElementById('word-display').style.color = 'var(--text)';
+            
+            // Reset and hide result box
+            const resultBox = document.getElementById('result-box');
+            resultBox.className = 'result-container';
+            document.getElementById('feedback').textContent = '';
+            document.getElementById('full-data').textContent = '';
+            
+            if (currentMode === 'genders') {
+                document.getElementById('translation-display').textContent = `(${data.translation})`;
+            } else {
+                document.getElementById('translation-display').textContent = '';
+                // Fill meaning buttons
+                const buttons = document.querySelectorAll('#meanings-ui button');
+                data.options.forEach((opt, i) => {
+                    buttons[i].textContent = opt;
+                    buttons[i].disabled = false;
+                });
+            }
+            
+            document.querySelectorAll('.gender-buttons button').forEach(b => b.disabled = false);
+            document.getElementById('next-btn').disabled = true;
+            
+            updateStats(data.statistics);
+        } else {
+            const err = await res.json();
+            alert(err.error);
+        }
+    }
+
+    async function submitGenderGuess(guess) {
+        const res = await fetch('/api/test_word', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({guess: guess})
+        });
+        handleGuessResult(await res.json(), guess);
+    }
+
+    async function submitMeaningGuess(index) {
+        const guess = currentWordData.options[index];
+        const res = await fetch('/api/test_meaning', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({guess: guess})
+        });
+        handleGuessResult(await res.json(), null, index);
+    }
+
+    function handleGuessResult(data, genderGuess, meaningIndex) {
+        const resultBox = document.getElementById('result-box');
+        const feedback = document.getElementById('feedback');
+        const wordDisplay = document.getElementById('word-display');
+        const fullData = document.getElementById('full-data');
+        
+        resultBox.classList.add('visible');
+
+        if (data.correct) {
+            feedback.textContent = currentConfig.sys_dict.message_status.correct + (data.is_record ? ' RECORD!' : '');
+            resultBox.classList.add('correct');
+            resultBox.classList.remove('wrong');
+            
+            textToSpeak = data.full_text;
+
+            if (currentMode === 'genders') {
+                const genderColor = {
+                    'm': 'var(--masculine)', 'f': 'var(--feminine)',
+                    'n': 'var(--neuter)', 'p': 'var(--plural)'
+                }[genderGuess];
+                wordDisplay.style.color = genderColor;
+            } else {
+                document.getElementById('translation-display').textContent = data.translation;
+                wordDisplay.style.color = 'var(--success)';
+            }
+            
+            fullData.textContent = data.full_text;
+
+            document.querySelectorAll('.gender-buttons button, .meaning-buttons button').forEach(b => b.disabled = true);
+            document.getElementById('next-btn').disabled = false;
+        } else {
+            feedback.textContent = currentConfig.sys_dict.message_status.wrong;
+            resultBox.classList.add('wrong');
+            resultBox.classList.remove('correct');
+            
+            if (currentMode === 'meanings') {
+                document.querySelectorAll('#meanings-ui button')[meaningIndex].disabled = true;
+            }
+        }
+
+        updateStats(data.statistics);
+    }
+
+    function updateStats(stats) {
+        document.getElementById('stat-success').textContent = `${stats.count_good}/${stats.count_total_words} (${(stats.ratio_success * 100).toFixed(1)}%)`;
+        document.getElementById('stat-attempts').textContent = `${stats.count_good}/${stats.count_total_clicks} (${(stats.ratio_attempts * 100).toFixed(1)}%)`;
+        document.getElementById('stat-streak').textContent = stats.success_streak;
+        document.getElementById('stat-record').textContent = stats.success_streak_record;
+
+        updateChart(stats.streak_history, stats.success_streak_record, stats.success_streak);
+    }
+
+    function updateChart(history, record, current) {
+        if ((!history || history.length === 0) && current === 0) return;
+
+        // Count frequency of each streak length
+        const maxLabel = Math.max(record, current);
+        const counts = Array(maxLabel + 1).fill(0);
+        history.forEach(s => {
+            if (s <= maxLabel) counts[s]++;
+        });
+
+        const labels = Array.from({length: maxLabel + 1}, (_, i) => i);
+        const ctx = document.getElementById('streak-chart').getContext('2d');
+
+        // Highlight RECORD in red and ACTUAL STREAK in green
+        const backgroundColors = labels.map(l => {
+            if (l === current && current > 0) return 'rgba(46, 204, 113, 0.8)'; // Green for actual
+            if (l === record && record > 0) return 'rgba(231, 76, 60, 0.8)'; // Red for record
+            return 'rgba(74, 144, 226, 0.6)'; // Blue for others
+        });
+        const borderColors = labels.map(l => {
+            if (l === current && current > 0) return 'rgba(46, 204, 113, 1)';
+            if (l === record && record > 0) return 'rgba(231, 76, 60, 1)';
+            return 'rgba(74, 144, 226, 1)';
+        });
+
+        if (streakChart) {
+            streakChart.data.labels = labels;
+            streakChart.data.datasets[0].data = counts;
+            streakChart.data.datasets[0].backgroundColor = backgroundColors;
+            streakChart.data.datasets[0].borderColor = borderColors;
+            streakChart.update();
+        } else {
+            streakChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: currentConfig.sys_dict.figure.xlabel,
+                        data: counts,
+                        backgroundColor: backgroundColors,
+                        borderColor: borderColors,
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: { beginAtZero: true, ticks: { stepSize: 1 } },
+                        x: { title: { display: true, text: currentConfig.sys_dict.figure.ylabel } }
+                    },
+                    plugins: { legend: { display: false } },
+                    responsive: true,
+                    maintainAspectRatio: false
+                }
+            });
+        }
+    }
+
+    document.getElementById('next-btn').onclick = nextWord;
+
+    document.getElementById('speak-btn').onclick = () => {
+        const lang = currentConfig.language;
+        const audio = new Audio(`/api/speak?text=${encodeURIComponent(textToSpeak)}&lang=${lang}`);
+        audio.play();
+    };
+
+    async function saveProgress() {
+        await fetch('/api/save', {method: 'POST'});
+        alert('Progress saved to CSV files');
+    }
+
+    async function resetActive() {
+        await fetch('/api/reset_active', {method: 'POST'});
+        alert('All words are now active again');
+    }
+
+    async function backToSetup() {
+        // Reset backend stats
+        await fetch('/api/reset_stats', {method: 'POST'});
+
+        // Reset frontend UI elements
+        document.getElementById('stat-success').textContent = '0/0 (0%)';
+        document.getElementById('stat-attempts').textContent = '0/0 (0%)';
+        document.getElementById('stat-streak').textContent = '0';
+        document.getElementById('stat-record').textContent = '0';
+        
+        // Reset and hide result box
+        const resultBox = document.getElementById('result-box');
+        resultBox.className = 'result-container';
+        document.getElementById('feedback').textContent = '';
+        document.getElementById('full-data').textContent = '';
+        
+        // Clear chart
+        if (streakChart) {
+            streakChart.destroy();
+            streakChart = null;
+        }
+
+        // Switch screens
+        document.getElementById('setup-section').classList.remove('hidden');
+        document.getElementById('quiz-section').classList.add('hidden');
+    }
+
+    init();
+</script>
+
+</body>
+</html>

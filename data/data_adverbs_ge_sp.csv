@@ -9,30 +9,24 @@
 "am wohlsten","lo mejor",11
 "ansonsten","por lo demás",11
 "auch","también",11
-"auch","también",11
 "aufwärts","hacia arriba",10
 "außen","fuera",10
 "außerdem","además",11
-"außerdem","además",11
 "bald","pronto",10
-"bald","pronto",11
 "bergab","cuesta abajo",11
 "bergauf","cuesta arriba",11
 "da","ahí",11
 "daher","por lo tanto",11
-"daher","por lo tanto",13
 "damals","entonces",11
 "dann","luego",11
 "darum","por ello",11
-"darum","por eso",9
 "deshalb","por ello",11
-"deshalb","por eso",8
 "deswegen","por eso",11
-"deswegen","por lo tanto",11
 "dienstags","los martes",11
 "doch","pues",11
 "donnerstags","los jueves",10
 "dort","allí",10
+"dringend","urgentemente, desesperadamente",100
 "drittens","en tercer lugar",10
 "ebenfalls","también",11
 "eher","más pronto",12
@@ -53,6 +47,7 @@
 "hingegen","por el contrario",11
 "hinten","detrás",10
 "häufig","frecuentemente",16
+"höflich","cortésmente",100
 "immer","siempre",10
 "innen","dentro",10
 "jetzt","ahora",11
@@ -62,7 +57,7 @@
 "links","a la izquierda",11
 "manchmal","a veces",10
 "meistens","la mayoría de las veces",10
-"mittwochs","los miércoles",10
+"mittwochs","los miércoles",9
 "monatlich","mensualmente",11
 "montags","los lunes",10
 "morgen","mañana",10
@@ -72,10 +67,8 @@
 "nie","nunca",10
 "nirgends","en ningún sitio",11
 "nur","solamente",11
-"nur","solo",10
 "oben","arriba",11
 "oft","frecuente",9
-"oft","frecuentemente",11
 "rechts","a la derecha",10
 "rückwärts","hacia atrás",11
 "samstags","los sábados",11
@@ -87,23 +80,27 @@
 "sonntags","los domingos",11
 "sonst","si no",11
 "später","más tarde",11
+"tagsüber","durante el día, de día",97
 "trotzdem","no obstante",11
 "täglich","diariamente",11
+"ungefähr","aproximadamente, más o menos",11
 "unten","abajo",10
+"von ungefähr","por casualidad",11
 "vorgestern","antes de ayer",11
 "vorn/vorne","delante",11
+"vorsichtig","con cuidado",97
 "vorwärts","hacia delante",11
 "wann","cuándo",11
 "warum","por qué",10
 "wenigstens","al menos",10
 "westwärts","hacia el oeste",11
+"wie","cómo",10
 "wie alt","cuántos años",11
 "wie lange","cuánto tiempo",9
 "wie oft","con qué frecuencia",9
 "wie teuer","qué caro",10
 "wie viel","cuánto",10
 "wie weit","qué tan lejos",11
-"wie","cómo",10
 "wieso","cómo",10
 "wo","dónde",10
 "woher","de dónde",11
@@ -116,9 +113,3 @@
 "öfter","más frecuente",11
 "überall","en todas partes",11
 "übermorgen","pasado mañana",10
-"ungefähr","aproximadamente, más o menos",11
-"von ungefähr","por casualidad",11
-"tagsüber","durante el día, de día",97
-"dringend","urgentemente, desesperadamente",100
-"höflich","cortésmente",100
-"vorsichtig","con cuidado",97
