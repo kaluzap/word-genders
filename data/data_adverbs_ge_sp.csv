@@ -1,115 +1,140 @@
 "adverb","translation","mistakes"
-"ab und zu","en ocasiones",10
-"abends","por las tardes",10
-"abwärts","hacia abajo",10
-"allerdings","sin embargo",11
-"am ehesten","lo más pronto",7
-"am häufigsten","lo más frecuente",11
-"am liebsten","lo más preferible",11
-"am wohlsten","lo mejor",11
-"ansonsten","por lo demás",11
-"auch","también",11
-"aufwärts","hacia arriba",10
-"außen","fuera",10
-"außerdem","además",11
-"bald","pronto",10
-"bergab","cuesta abajo",11
-"bergauf","cuesta arriba",11
-"da","ahí",11
-"daher","por lo tanto",11
-"damals","entonces",11
-"dann","luego",11
-"darum","por ello",11
-"deshalb","por ello",11
-"deswegen","por eso",11
-"dienstags","los martes",11
-"doch","pues",11
-"donnerstags","los jueves",10
-"dort","allí",10
-"dringend","urgentemente, desesperadamente",100
-"drittens","en tercer lugar",10
-"ebenfalls","también",11
-"eher","más pronto",12
-"erstens","en primer lugar",10
-"falls","caso que",10
-"fast immer","casi siempre",9
-"fast nie","casi nunca",10
-"folglich","por lo tanto",11
-"freitags","los viernes",9
-"früher","antes",11
-"gern","gustosamente",11
-"gestern","ayer",11
-"gleich","inmediatamente",11
-"gleichfalls","igualmente",11
-"heimwärts","hacia casa",14
-"heute","hoy",10
-"hier","aquí",11
-"hingegen","por el contrario",11
-"hinten","detrás",10
-"häufig","frecuentemente",16
-"höflich","cortésmente",100
-"immer","siempre",10
-"innen","dentro",10
-"jetzt","ahora",11
-"jährlich","anualmente",10
-"kaum","apenas",9
-"lieber","preferiblemente",10
-"links","a la izquierda",11
-"manchmal","a veces",10
-"meistens","la mayoría de las veces",10
-"mittwochs","los miércoles",9
-"monatlich","mensualmente",11
-"montags","los lunes",10
-"morgen","mañana",10
-"morgens","por las mañanas",11
-"nachmittags","después de comer",11
-"nachts","por las noches",10
-"nie","nunca",10
-"nirgends","en ningún sitio",11
-"nur","solamente",11
-"oben","arriba",11
-"oft","frecuente",9
-"rechts","a la derecha",10
-"rückwärts","hacia atrás",11
-"samstags","los sábados",11
-"sehr","muy",11
-"selten","pocas veces",11
-"so","así",11
-"sofort","inmediatamente",10
-"somit","así pues",11
-"sonntags","los domingos",11
-"sonst","si no",11
-"später","más tarde",11
-"tagsüber","durante el día, de día",97
-"trotzdem","no obstante",11
-"täglich","diariamente",11
-"ungefähr","aproximadamente, más o menos",11
-"unten","abajo",10
-"von ungefähr","por casualidad",11
-"vorgestern","antes de ayer",11
-"vorn/vorne","delante",11
-"vorsichtig","con cuidado",97
-"vorwärts","hacia delante",11
-"wann","cuándo",11
-"warum","por qué",10
-"wenigstens","al menos",10
-"westwärts","hacia el oeste",11
-"wie","cómo",10
-"wie alt","cuántos años",11
-"wie lange","cuánto tiempo",9
-"wie oft","con qué frecuencia",9
-"wie teuer","qué caro",10
-"wie viel","cuánto",10
-"wie weit","qué tan lejos",11
-"wieso","cómo",10
-"wo","dónde",10
-"woher","de dónde",11
-"wohin","hacia dónde",10
-"wohl","bien",11
-"wohler","mejor",11
-"wöchentlich","semanalmente",10
-"zudem","además",11
-"zweitens","en segundo lugar",11
-"öfter","más frecuente",11
-"überall","en todas partes",11
-"übermorgen","pasado mañana",10
+"ab und zu","en ocasiones",10.0
+"abends","por las tardes",10.0
+"abwärts","hacia abajo",10.0
+"allerdings","sin embargo",11.0
+"am ehesten","lo más probable / lo más pronto",7.0
+"am häufigsten","lo más frecuente",11.0
+"am liebsten","lo más preferible",11.0
+"am wohlsten","lo mejor",11.0
+"andererseits","por otra parte",1.0
+"ansonsten","por lo demás",12.0
+"auch","también",11.0
+"aufwärts","hacia arriba",10.0
+"außen","fuera",10.0
+"außerdem","además",11.0
+"bald","pronto",10.0
+"bergab","cuesta abajo",11.0
+"bergauf","cuesta arriba",11.0
+"beziehungsweise","o bien / respectivamente",1.0
+"da","ahí",11.0
+"daher","por lo tanto",11.0
+"damals","entonces",11.0
+"dann","luego",10.0
+"darum","por ello",11.0
+"deshalb","por ello",10.0
+"deswegen","por eso",11.0
+"dienstags","los martes",11.0
+"doch","pues",11.0
+"donnerstags","los jueves",10.0
+"dort","allí",10.0
+"dringend","urgentemente, desesperadamente",100.0
+"drittens","en tercer lugar",10.0
+"ebenfalls","también",11.0
+"eher","más bien / más pronto",12.0
+"einerseits","por una parte",1.0
+"erstens","en primer lugar",10.0
+"falls","en caso de que / si",10.0
+"fast immer","casi siempre",9.0
+"fast nie","casi nunca",10.0
+"folglich","por lo tanto",11.0
+"freitags","los viernes",9.0
+"früher","antes",11.0
+"gelegentlich","ocasionalmente",1.0
+"gern","gustosamente",11.0
+"gestern","ayer",11.0
+"gleich","inmediatamente",11.0
+"gleichfalls","igualmente",11.0
+"gleichzeitig","al mismo tiempo",1.0
+"hauptsächlich","principalmente",1.0
+"heimwärts","hacia casa",14.0
+"heute","hoy",10.0
+"hier","aquí",11.0
+"hingegen","por el contrario",11.0
+"hinten","detrás",9.0
+"häufig","frecuentemente",16.0
+"höflich","cortésmente",100.0
+"immer","siempre",10.0
+"immerhin","al menos / después de todo",1.0
+"innen","dentro",10.0
+"insofern","en este sentido",1.0
+"jedenfalls","en todo caso / de todas formas",1.0
+"jetzt","ahora",11.0
+"jährlich","anualmente",10.0
+"kaum","apenas",9.0
+"keinesfalls","de ninguna manera",1.0
+"lieber","preferiblemente",10.0
+"links","a la izquierda",11.0
+"manchmal","a veces",10.0
+"meistens","la mayoría de las veces",10.0
+"mittwochs","los miércoles",9.0
+"monatlich","mensualmente",11.0
+"montags","los lunes",10.0
+"morgen","mañana",10.0
+"morgens","por las mañanas",11.0
+"nach wie vor","todavía / como siempre",1.0
+"nachmittags","por la tarde",11.0
+"nachts","por las noches",10.0
+"neuerdings","últimamente / recientemente",1.0
+"nichtsdestotrotz","no obstante",1.0
+"nie","nunca",10.0
+"nirgends","en ningún sitio",11.0
+"notfalls","en caso de emergencia",1.0
+"nur","solamente",11.0
+"oben","arriba",11.0
+"oft","frecuentemente / a menudo",9.0
+"rechts","a la derecha",10.0
+"rückwärts","hacia atrás",11.0
+"samstags","los sábados",10.0
+"sehr","muy",11.0
+"selten","pocas veces",11.0
+"so","así",11.0
+"sofort","inmediatamente",10.0
+"somit","así pues",11.0
+"sonntags","los domingos",11.0
+"sonst","si no",11.0
+"später","más tarde",11.0
+"stattdessen","en lugar de eso",1.0
+"tagsüber","durante el día, de día",97.0
+"trotzdem","no obstante",11.0
+"täglich","diariamente",11.0
+"ungefähr","aproximadamente, más o menos",11.0
+"unten","abajo",10.0
+"ununterbrochen","ininterrumpidamente",1.0
+"vermutlich","probablemente",1.0
+"von ungefähr","por casualidad",11.0
+"vorerst","por el momento",1.0
+"vorgestern","antes de ayer",11.0
+"vorn/vorne","delante",11.0
+"vorsichtig","con cuidado",97.0
+"vorwärts","hacia delante",11.0
+"vorzugsweise","preferentemente",1.0
+"wann","cuándo",11.0
+"warum","por qué",9.0
+"wenigstens","al menos",10.0
+"westwärts","hacia el oeste",11.0
+"wie","cómo",10.0
+"wie alt","cuántos años",11.0
+"wie lange","cuánto tiempo",9.0
+"wie oft","con qué frecuencia",9.0
+"wie teuer","qué caro",10.0
+"wie viel","cuánto",10.0
+"wie weit","qué tan lejos",11.0
+"wieso","¿por qué? / ¿cómo así?",10.0
+"wo","dónde",10.0
+"woher","de dónde",11.0
+"wohin","hacia dónde",10.0
+"wohl","bien",11.0
+"wohler","mejor",11.0
+"wöchentlich","semanalmente",10.0
+"zeitweise","temporalmente",1.0
+"zudem","además",11.0
+"zufällig","por casualidad",1.0
+"zunehmend","cada vez más",1.0
+"zuvor","antes / previamente",1.0
+"zweifellos","sin duda",1.0
+"zweitens","en segundo lugar",11.0
+"öfter","más frecuente",11.0
+"überall","en todas partes",11.0
+"übermorgen","pasado mañana",10.0
+"übrigens","por cierto / a propósito",1.0
