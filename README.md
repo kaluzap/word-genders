@@ -44,6 +44,8 @@ From the **Configuration** screen, you can:
 
 Your training progress (how often each word was missed) is stored in `data/scores.csv`, which is not tracked by git. Deleting it resets all scores.
 
+Each word appears only once per dictionary, with all its translations in the same row (e.g. `"Gewicht","Gewichte","n","peso, importancia, pesa"`). The same spelling can appear again only with a different plural or gender, such as `der See` (lago) and `die See` (mar). If a dictionary repeats a word, its rows are merged when it is loaded.
+
 ### Noun genders in German
 ![Screenshot](/img/nouns_german.png)
 
