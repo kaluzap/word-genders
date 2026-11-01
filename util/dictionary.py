@@ -10,8 +10,10 @@ logger = logging.getLogger(__name__)
 # Standardized word categories
 WORD_KINDS = ["adjectives", "nouns", "verbs", "adverbs"]
 
-# Columns used for identifying unique words and sorting
-KEY_COLUMNS = ["adjective", "adverb", "singular", "infinitive", "word", "plural"]
+# Columns that identify a word. Each word appears once per dictionary, with
+# all its translations in one row; the same spelling may only repeat with a
+# different plural or gender (e.g. der See / die See).
+KEY_COLUMNS = ["adjective", "adverb", "singular", "infinitive", "word", "plural", "gender"]
 
 # Training scores live outside the dictionaries (and outside git), one row
 # per dictionary and word: dictionary,word,score. Words with the default
@@ -19,6 +21,35 @@ KEY_COLUMNS = ["adjective", "adverb", "singular", "infinitive", "word", "plural"
 SCORES_PATH = Path(configuration.DATA_PATH) / "scores.csv"
 SCORES_COLUMNS = ["dictionary", "word", "score"]
 DEFAULT_SCORE = 1
+
+def merge_duplicates(df: pd.DataFrame) -> pd.DataFrame:
+    """Merges rows of the same word into one, joining their translations."""
+    subset = [c for c in KEY_COLUMNS if c in df.columns]
+    if not subset or not df.duplicated(subset=subset).any():
+        return df
+
+    def join_translations(values: pd.Series) -> str:
+        if len(values) == 1:
+            return values.iloc[0]
+        parts = []
+        for value in values.dropna():
+            for part in str(value).split(","):
+                part = part.strip()
+                if part and part not in parts:
+                    parts.append(part)
+        return ", ".join(parts)
+
+    aggregations = {c: "first" for c in df.columns if c not in subset}
+    if "translation" in aggregations:
+        aggregations["translation"] = join_translations
+    if "mistakes" in aggregations:
+        aggregations["mistakes"] = "max"
+
+    repeated = df[df.duplicated(subset=subset)][subset].astype(str).agg("|".join, axis=1)
+    logger.warning(f"Merged repeated words: {', '.join(sorted(set(repeated)))}")
+    merged = df.groupby(subset, sort=False, as_index=False, dropna=False).agg(aggregations)
+    return merged[df.columns]
+
 
 class Dictionary:
     """
@@ -46,6 +77,7 @@ class Dictionary:
 
         self.path = path_to_load
         self.name = path_to_load.name
+        self.data = merge_duplicates(self.data)
         self.data["active"] = True
         
         self._extract_metadata_from_name()
@@ -89,7 +121,7 @@ class Dictionary:
         logger.info(f"Activated {active_count} of {len(self.data)} words.")
         
     def save_dictionary(self) -> None:
-        """Saves the dictionary to CSV after deduplication and sorting."""
+        """Saves the dictionary to CSV after merging repeated words and sorting."""
         if self.data.empty:
             return
 
@@ -100,9 +132,8 @@ class Dictionary:
         columns_to_drop = [c for c in ["active", "p", "mistakes"] if c in df_to_save.columns]
         df_to_save.drop(columns=columns_to_drop, inplace=True)
         
-        # Deduplicate based on word columns
+        df_to_save = merge_duplicates(df_to_save)
         subset = [c for c in KEY_COLUMNS if c in df_to_save.columns]
-        df_to_save.drop_duplicates(subset=subset, inplace=True)
         
         # Sort by the primary word column
         if subset:
@@ -125,9 +156,6 @@ class Dictionary:
             "word": self._word_keys(),
             "score": self.data["mistakes"].astype(int),
         })
-        # Rows sharing all word columns share one score; keep the highest
-        mine = mine.sort_values("score", ascending=False, kind="stable")
-        mine = mine.drop_duplicates(subset="word")
         mine = mine[mine["score"] != DEFAULT_SCORE]
 
         result = pd.concat([others, mine]).sort_values(["dictionary", "word"], kind="stable")
@@ -142,6 +170,6 @@ class Dictionary:
         return pd.read_csv(SCORES_PATH, dtype={"dictionary": str, "word": str}, keep_default_na=False)
 
     def _word_keys(self) -> pd.Series:
-        """Identifies each word by its word columns, e.g. "Brand|Brände"."""
+        """Identifies each word by its key columns, e.g. "Brand|Brände|m"."""
         subset = [c for c in KEY_COLUMNS if c in self.data.columns]
         return self.data[subset].astype(str).agg("|".join, axis=1)
