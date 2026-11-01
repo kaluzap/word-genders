@@ -196,16 +196,15 @@ def generate_full_text(word_data, sys_dict, kind):
             text += f"{sys_dict['missing_gender']['without_singular']}, "
         else:
             gender = word_data.get("gender", "")
-            if "m" in gender: text += sys_dict["article_texts"]["m"] + " "
-            if "f" in gender: text += sys_dict["article_texts"]["f"] + " "
-            if "n" in gender: text += sys_dict["article_texts"]["n"] + " "
-            text += singular + ", "
+            # Articles are empty in languages without them (Russian), so skip blanks
+            articles = [sys_dict["article_texts"][g] for g in "mfn" if g in gender]
+            text += " ".join([a for a in articles if a] + [singular]) + ", "
 
         plural = word_data.get("plural", "-")
         if plural == "-":
             text += f"{sys_dict['missing_gender']['without_plural']}"
         else:
-            text += f"{sys_dict['article_texts']['p']} {plural}"
+            text += " ".join(a for a in [sys_dict['article_texts']['p'], plural] if a)
     elif kind == "verbs":
         parts = [word_data.get(x) for x in ["infinitive", "participle_II"] if word_data.get(x) and word_data.get(x) != "-"]
         text = ", ".join(parts)
