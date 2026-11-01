@@ -1,9 +1,6 @@
 import os
 from io import BytesIO
 
-import matplotlib
-matplotlib.use('Agg') # MUST be before import pyplot in util/util
-
 from flask import Flask, request, jsonify, send_file, render_template
 import pandas as pd
 from numpy import random
@@ -311,18 +308,6 @@ def test_word():
     }
     
     return jsonify(result)
-
-@app.route('/api/streak_image')
-def streak_image():
-    # Load labels from config
-    xlabel = state.configuration.sys_dict.get('figure', {}).get('xlabel', 'Streak')
-    ylabel = state.configuration.sys_dict.get('figure', {}).get('ylabel', 'Frequency')
-    state.success_streak.make_success_streak_figure(xlabel, ylabel)
-    
-    img_io = BytesIO()
-    state.success_streak.last_success_streak_img.save(img_io, 'PNG')
-    img_io.seek(0)
-    return send_file(img_io, mimetype='image/png')
 
 def get_stats_dict():
     ratio_success = state.count_good / state.count_total_words if state.count_total_words else 0
