@@ -8,7 +8,7 @@ from configuration import configuration
 logger = logging.getLogger(__name__)
 
 # Standardized word categories
-WORD_KINDS = ["adjectives", "nouns", "verbs", "adverbs"]
+WORD_KINDS = ["adjectives", "nouns", "verbs", "adverbs", "all"]
 
 # Columns that identify a word. Each word appears once per dictionary, with
 # all its translations in one row; the same spelling may only repeat with a
@@ -98,6 +98,8 @@ class Dictionary:
     def _extract_metadata_from_name(self) -> None:
         """Extracts kind, language, and translation from the filename."""
         # Expected format: data_[kind]_[lang]_[tran].csv
+        # Reset first so nothing is left over from the previous dictionary
+        self.kind = self.language = self.translation = "unknown"
         parts = self.name.replace(".csv", "").split("_")
         if len(parts) >= 4:
             kind_candidate = parts[1]

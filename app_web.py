@@ -1,9 +1,6 @@
 import os
 from io import BytesIO
 
-import matplotlib
-matplotlib.use('Agg') # MUST be before import pyplot in util/util
-
 from flask import Flask, request, jsonify, send_file, render_template
 import pandas as pd
 from numpy import random
@@ -199,16 +196,15 @@ def generate_full_text(word_data, sys_dict, kind):
             text += f"{sys_dict['missing_gender']['without_singular']}, "
         else:
             gender = word_data.get("gender", "")
-            if "m" in gender: text += sys_dict["article_texts"]["m"] + " "
-            if "f" in gender: text += sys_dict["article_texts"]["f"] + " "
-            if "n" in gender: text += sys_dict["article_texts"]["n"] + " "
-            text += singular + ", "
+            # Articles are empty in languages without them (Russian), so skip blanks
+            articles = [sys_dict["article_texts"][g] for g in "mfn" if g in gender]
+            text += " ".join([a for a in articles if a] + [singular]) + ", "
 
         plural = word_data.get("plural", "-")
         if plural == "-":
             text += f"{sys_dict['missing_gender']['without_plural']}"
         else:
-            text += f"{sys_dict['article_texts']['p']} {plural}"
+            text += " ".join(a for a in [sys_dict['article_texts']['p'], plural] if a)
     elif kind == "verbs":
         parts = [word_data.get(x) for x in ["infinitive", "participle_II"] if word_data.get(x) and word_data.get(x) != "-"]
         text = ", ".join(parts)
@@ -311,18 +307,6 @@ def test_word():
     }
     
     return jsonify(result)
-
-@app.route('/api/streak_image')
-def streak_image():
-    # Load labels from config
-    xlabel = state.configuration.sys_dict.get('figure', {}).get('xlabel', 'Streak')
-    ylabel = state.configuration.sys_dict.get('figure', {}).get('ylabel', 'Frequency')
-    state.success_streak.make_success_streak_figure(xlabel, ylabel)
-    
-    img_io = BytesIO()
-    state.success_streak.last_success_streak_img.save(img_io, 'PNG')
-    img_io.seek(0)
-    return send_file(img_io, mimetype='image/png')
 
 def get_stats_dict():
     ratio_success = state.count_good / state.count_total_words if state.count_total_words else 0

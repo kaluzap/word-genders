@@ -354,10 +354,11 @@
         const dict = currentConfig.sys_dict;
         if (!dict) return;
         
-        document.querySelector('.btn-m').textContent = dict.article_texts.m;
-        document.querySelector('.btn-f').textContent = dict.article_texts.f;
-        document.querySelector('.btn-n').textContent = dict.article_texts.n;
-        document.querySelector('.btn-p').textContent = dict.article_texts.p;
+        // Button labels, e.g. "der" in German or "мужской" in Russian (which has no articles)
+        document.querySelector('.btn-m').textContent = dict.button_properties.article_m.text;
+        document.querySelector('.btn-f').textContent = dict.button_properties.article_f.text;
+        document.querySelector('.btn-n').textContent = dict.button_properties.article_n.text;
+        document.querySelector('.btn-p').textContent = dict.button_properties.article_p.text;
         document.getElementById('repetitions-label').textContent = dict.checkbuttons.repetitions;
     }
 

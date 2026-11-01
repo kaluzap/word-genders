@@ -26,40 +26,21 @@ Install the requirements:
 pip install -r requirements.txt
 ```
 
-## Desktop Application
+## Usage
 
-Run the desktop application (Tkinter):
-
-```bash
-python words.py
-```
-
-From the **Configuration** screen, you can:
-1.  **Choose training language**: German or Russian.
-2.  **Load dictionary**: Choose a `.csv` file from the `data/` directory.
-3.  **Tools**:
-    *   **Nouns genders**: Practice the genders of nouns.
-    *   **Meanings**: Practice word translations.
-    *   **Manage words**: Add or remove words from the current dictionary.
-
-Your training progress (how often each word was missed) is stored in `data/scores.csv`, which is not tracked by git. Deleting it resets all scores.
-
-Each word appears only once per dictionary, with all its translations in the same row (e.g. `"Gewicht","Gewichte","n","peso, importancia, pesa"`). The same spelling can appear again only with a different plural or gender, such as `der See` (lago) and `die See` (mar). If a dictionary repeats a word, its rows are merged when it is loaded.
-
-### Noun genders in German
-![Screenshot](/img/nouns_german.png)
-
-### Noun genders in Russian
-![Screenshot](/img/nouns_russian.png)
-
-## Web Application
-
-Run the web version (Flask):
+Start the app (Flask):
 
 ```bash
 python app_web.py
 ```
 
-Then open your browser at `http://127.0.0.1:5000`.
+Then open your browser at `http://127.0.0.1:5000`. On the **Configuration** screen:
+1.  **Training language**: German or Russian.
+2.  **Dictionary**: any `data_*.csv` file in the `data/` directory.
+3.  **Mode**:
+    *   **Genders**: practice the genders of nouns (needs a nouns dictionary).
+    *   **Meanings**: pick the right translation out of four.
 
+Your training progress (how often each word was missed) is stored in `data/scores.csv`, which is not tracked by git. Deleting it resets all scores.
 
+Each word appears only once per dictionary, with all its translations in the same row (e.g. `"Gewicht","Gewichte","n","peso, importancia, pesa"`). The same spelling can appear again only with a different plural or gender, such as `der See` (lago) and `die See` (mar). If a dictionary repeats a word, its rows are merged when it is loaded.
