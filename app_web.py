@@ -246,6 +246,9 @@ def test_meaning():
             state.dictionary.data.at[idx, "mistakes"] += 1
             state.count_total_words += 1
 
+    if not state.already_tested:
+        # The mistakes weight changed: persist it so progress survives closing the tab
+        state.dictionary.save_dictionary()
     state.already_tested = True
     
     result = {
@@ -291,6 +294,9 @@ def test_word():
             state.dictionary.data.at[idx, "mistakes"] += 1
             state.count_total_words += 1
 
+    if not state.already_tested:
+        # The mistakes weight changed: persist it so progress survives closing the tab
+        state.dictionary.save_dictionary()
     state.already_tested = True
     
     # Prepare result data
@@ -369,6 +375,7 @@ def reset_active():
 
 @app.route('/api/reset_stats', methods=['POST'])
 def reset_stats():
+    state.dictionary.save_dictionary()
     state.success_streak = SuccessStreak()
     state.count_good = 0
     state.count_total_clicks = 0
@@ -379,7 +386,7 @@ def reset_stats():
 
 @app.route('/api/set_repetitions', methods=['POST'])
 def set_repetitions():
-    state.allow_repetitions = request.json.get('allow', True)
+    state.allow_repetitions = bool(request.json.get('allow', True))
     return jsonify({'allow_repetitions': state.allow_repetitions})
 
 if __name__ == '__main__':
