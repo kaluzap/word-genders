@@ -1,7 +1,6 @@
 import argparse
 from gtts import gTTS
 from io import BytesIO
-from pygame import mixer
 import matplotlib
 matplotlib.use('Agg') # Use non-interactive backend
 import matplotlib.pyplot as plt
@@ -83,6 +82,8 @@ def play_string(text: str, language: str):
     except Exception as e:
         print(e)
         return
+    from pygame import mixer  # only the desktop app needs pygame
+
     mixer.init()
     mp3_fp.seek(0)
     mixer.music.load(mp3_fp, "mp3")

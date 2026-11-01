@@ -92,7 +92,7 @@ class Dictionary:
         
         # Sort by the primary word column
         if subset:
-            df_to_save.sort_values(by=subset[0], inplace=True)
+            df_to_save.sort_values(by=subset[0], kind="stable", inplace=True)
             
         df_to_save.to_csv(self.path, index=False, quoting=2)
         logger.info(f"Successfully saved dictionary: {self.name}")

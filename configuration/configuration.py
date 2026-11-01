@@ -24,10 +24,10 @@ class Configuration():
             f = open(self.path)
         except FileNotFoundError:
             print(f'I cannot open the file "{self.path}"')
-            self.data = pd.DataFrame()
             return
         print(f"loading {self.path}")
-        self.sys_dict = json.load(f)
+        with f:
+            self.sys_dict = json.load(f)
 
 
 if __name__ == "__main__":
