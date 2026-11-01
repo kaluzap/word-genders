@@ -54,7 +54,7 @@ def get_dictionaries():
     return jsonify(available_dictionaries())
 
 def available_dictionaries():
-    return sorted(f.name for f in DATA_PATH.glob('*.csv'))
+    return sorted(f.name for f in DATA_PATH.glob('data_*.csv'))
 
 @app.route('/api/load_dictionary', methods=['POST'])
 def load_dictionary():
@@ -248,7 +248,7 @@ def test_meaning():
 
     if not state.already_tested:
         # The mistakes weight changed: persist it so progress survives closing the tab
-        state.dictionary.save_dictionary()
+        state.dictionary.save_scores()
     state.already_tested = True
     
     result = {
@@ -296,7 +296,7 @@ def test_word():
 
     if not state.already_tested:
         # The mistakes weight changed: persist it so progress survives closing the tab
-        state.dictionary.save_dictionary()
+        state.dictionary.save_scores()
     state.already_tested = True
     
     # Prepare result data
@@ -375,7 +375,7 @@ def reset_active():
 
 @app.route('/api/reset_stats', methods=['POST'])
 def reset_stats():
-    state.dictionary.save_dictionary()
+    state.dictionary.save_scores()
     state.success_streak = SuccessStreak()
     state.count_good = 0
     state.count_total_clicks = 0

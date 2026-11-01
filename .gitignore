@@ -1,3 +1,6 @@
 /venv
 __pycache__/
 .gemini/
+# Personal training scores (see util/dictionary.py)
+data/scores.csv
+data/scores.tmp

@@ -42,6 +42,8 @@ From the **Configuration** screen, you can:
     *   **Meanings**: Practice word translations.
     *   **Manage words**: Add or remove words from the current dictionary.
 
+Your training progress (how often each word was missed) is stored in `data/scores.csv`, which is not tracked by git. Deleting it resets all scores.
+
 ### Noun genders in German
 ![Screenshot](/img/nouns_german.png)
 

@@ -133,7 +133,7 @@ class ControlFrame(tk.Frame):
         self.master.configuration.load_configuration(self.selected_language.get())
 
     def select_file(self):
-        filetypes = (("Data files", "*.csv"), ("All files", "*.*"))
+        filetypes = (("Dictionaries", "data_*.csv"), ("All files", "*.*"))
 
         filename = filedialog.askopenfilename(
             title="Open a file", initialdir=DATA_PATH, filetypes=filetypes
