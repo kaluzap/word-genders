@@ -1,25 +1,20 @@
 import os
-import json
-import base64
 from io import BytesIO
-from pathlib import Path
 
 import matplotlib
 matplotlib.use('Agg') # MUST be before import pyplot in util/util
 
 from flask import Flask, request, jsonify, send_file, render_template
-from flask_cors import CORS
 import pandas as pd
 from numpy import random
 from gtts import gTTS
 
 # Import existing classes
 from util.dictionary import Dictionary
-from configuration.configuration import Configuration, DATA_PATH
-from util.util import SuccessStreak, play_string
+from configuration.configuration import Configuration, DATA_PATH, SYS_DICTS
+from util.util import SuccessStreak
 
 app = Flask(__name__)
-CORS(app)
 
 # Global state for the single-user web version
 class AppState:
@@ -45,6 +40,8 @@ def index():
 @app.route('/api/config')
 def get_config():
     lang = request.args.get('lang', state.configuration.language)
+    if lang not in SYS_DICTS:
+        return jsonify({'error': f'Unknown language: {lang}'}), 400
     state.configuration.load_configuration(lang)
     return jsonify({
         'language': state.configuration.language,
@@ -54,8 +51,10 @@ def get_config():
 
 @app.route('/api/dictionaries')
 def get_dictionaries():
-    files = list(DATA_PATH.glob('*.csv'))
-    return jsonify([f.name for f in files])
+    return jsonify(available_dictionaries())
+
+def available_dictionaries():
+    return sorted(f.name for f in DATA_PATH.glob('*.csv'))
 
 @app.route('/api/load_dictionary', methods=['POST'])
 def load_dictionary():
@@ -63,7 +62,10 @@ def load_dictionary():
     dict_name = data.get('name')
     if not dict_name:
         return jsonify({'error': 'No dictionary name provided'}), 400
-    
+    # Only files listed in data/ may be loaded (and later overwritten by /api/save)
+    if dict_name not in available_dictionaries():
+        return jsonify({'error': f'Unknown dictionary: {dict_name}'}), 404
+
     dict_path = DATA_PATH / dict_name
     state.dictionary.load_dictionary(str(dict_path))
     return jsonify({
@@ -149,8 +151,13 @@ def next_meaning():
                 return jsonify({'error': 'No more active words'}), 404
             df_target = active_df.sample().copy()
 
-        # Distractors
-        df_distractors = state.dictionary.data[state.dictionary.data.index != df_target.index[0]].sample(3).copy()
+        # Distractors: other words whose translation differs from the target's,
+        # otherwise two buttons could show the same (correct) answer
+        candidates = state.dictionary.data.drop_duplicates(subset="translation")
+        candidates = candidates[candidates["translation"] != df_target.iloc[0]["translation"]]
+        if len(candidates) < 3:
+            return jsonify({'error': 'The dictionary needs at least 4 different translations'}), 400
+        df_distractors = candidates.sample(3).copy()
         
         # Combine and shuffle
         df_options = pd.concat([df_target, df_distractors]).sample(frac=1)
@@ -239,6 +246,9 @@ def test_meaning():
             state.dictionary.data.at[idx, "mistakes"] += 1
             state.count_total_words += 1
 
+    if not state.already_tested:
+        # The mistakes weight changed: persist it so progress survives closing the tab
+        state.dictionary.save_dictionary()
     state.already_tested = True
     
     result = {
@@ -284,6 +294,9 @@ def test_word():
             state.dictionary.data.at[idx, "mistakes"] += 1
             state.count_total_words += 1
 
+    if not state.already_tested:
+        # The mistakes weight changed: persist it so progress survives closing the tab
+        state.dictionary.save_dictionary()
     state.already_tested = True
     
     # Prepare result data
@@ -362,6 +375,7 @@ def reset_active():
 
 @app.route('/api/reset_stats', methods=['POST'])
 def reset_stats():
+    state.dictionary.save_dictionary()
     state.success_streak = SuccessStreak()
     state.count_good = 0
     state.count_total_clicks = 0
@@ -372,10 +386,9 @@ def reset_stats():
 
 @app.route('/api/set_repetitions', methods=['POST'])
 def set_repetitions():
-    state.allow_repetitions = request.json.get('allow', True)
+    state.allow_repetitions = bool(request.json.get('allow', True))
     return jsonify({'allow_repetitions': state.allow_repetitions})
 
 if __name__ == '__main__':
-    # Ensure templates directory exists
-    Path("templates").mkdir(exist_ok=True)
-    app.run(debug=True, port=5000)
+    # Debug mode enables the Werkzeug debugger; opt in with FLASK_DEBUG=1
+    app.run(debug=os.environ.get("FLASK_DEBUG") == "1", port=5000)
